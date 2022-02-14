@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<title>Htblock </title>
+		<meta charset="UTF-8">
+		<script src="core.js"></script>
+		<script src="block.js"></script>
+		<script src="php_compressed.js"></script>
+		<script src="blocks_compressed.js"></script>
+		<script src="zh-hans.js"></script>
+		<script src="htmlblock.js"></script>
+		<script src="htmlblockcode.js"></script>
+		
+		<script type="text/javascript">
+		</script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"></script>
+	</head>
+	<body>
+<div class="mdui-appbar">
+			<div class="mdui-toolbar  mdui-color-grey-800">
+				<a href="javascript:;" class="mdui-typo-title">Htblock </a>
+
+                <a href="javascript:;" mdui-menu="{target: '#example-1'}" class="mdui-typo-subheading">保存</a>
+				    <ul class="mdui-menu " id="example-1">
+				      <li class="mdui-menu-item">
+				        <a href="javascript:;"onclick="dosaveblockly()"class="mdui-ripple">保存至本地</a>
+				      </li>
+				      <li class="mdui-menu-item">
+				        <a href="javascript:;" onclick="saveblockly()" class="mdui-ripple">保存至缓冲</a>
+				      </li>
+				    </ul>	
+				<a href="javascript:;" mdui-menu="{target: '#example-2'}"  class="mdui-typo-subheading">打开</a>
+				<ul class="mdui-menu " id="example-2">
+				  <li class="mdui-menu-item">
+				    <a href="javascript:;" onclick="donosaveblockly()"class="mdui-ripple">从本地打开</a>
+				  </li>
+				  <li class="mdui-menu-item">
+				    <a href="javascript:;" onclick="nosaveblockly()" class="mdui-ripple">从缓冲打开</a>
+				  </li>
+				</ul>
+				<a href="javascript:;"mdui-menu="{target: '#example-3'}"  " class="mdui-typo-subheading">导出</a>
+				<ul class="mdui-menu " id="example-3">
+				  <li class="mdui-menu-item">
+				    <a href="javascript:;" onclick="showHtml()"class="mdui-ripple">生成代码并复制</a>
+				  </li>
+				  <li class="mdui-menu-item">
+				    <a href="javascript:;" onclick="saveHtml()" class="mdui-ripple">导出为Html文件</a>
+				  </li>
+				</ul>
+				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading">关于</a>
+
+				<div class="mdui-toolbar-spacer"></div>
+				<p class="gmdui-typo-body-2-opacity">Theme for 白篮</p><p class="gmdui-typo-body-2-opacity">Make for 王翊轩</p>
+<br><br><br><br><br>
+			</div>
+		</div>
+		<small>&nbsp;</small>
+		<p4>&nbsp;</p4>
+		<div id="blocklyDiv" style="height: 670px; width: 1350px;">
+			<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none;background-color: white;opacity: 0.5;">
+				<category name="框架" colour="#6573b8">
+					<block type="top"></block>
+					<block type="head"></block>
+				</category>
+				<category name="头部" colour="#b86565">
+					<block type="title">
+						<value name="title01">
+							<shadow type="texto">
+								<field name="texto01">啦啦啦</field>
+							</shadow>
+						</value>
+					</block>
+					<block type="link">
+						<field name="link01">text/css</field>
+						<field name="link02">stylesheet</field>
+						<field name="link03">text/css</field>
+					</block>
+					<block type="style">
+						<value name="NAME">
+							<shadow type="texto">
+								<field name="texto01">body {background-color:yellow} p {color:blue}</field>
+							</shadow>
+						</value>
+					</block>
+				</category>
+				<sep></sep>
+				<category name="文本" colour="#b87a65">
+					<block type="texto">
+						<field name="texto01">我是一串可爱的文本</field>
+					</block>
+					<block type="textand">
+						<value name="textand01">
+							<shadow type="texto">
+								<field name="texto01">1</field>
+							</shadow>
+						</value>
+						<value name="textand02">
+							<shadow type="texto">
+								<field name="texto01">2</field>
+							</shadow>
+						</value>
+					</block>
+				</category>
+			</xml>
+		</div>	
+ <script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+			<script src="load.js"></script>
+<script src="load2.js"></script>
+<script></script>
+	</body>
+
+</html>
