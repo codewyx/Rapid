@@ -14,7 +14,7 @@ function dosaveblockly() {
   const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
   saveShareContent(Blockly.Xml.domToText(xml), "myxml.htb");
   mdui.snackbar({
-    message: "Htblock ：下载成功",
+    message: "Rapid ：下载成功",
     position: "right-top"
   });
 }
@@ -49,7 +49,7 @@ function readFile() {
     const xml = Blockly.Xml.textToDom(fileString);
     Blockly.Xml.domToWorkspace(xml, Blockly.getMainWorkspace());
     mdui.snackbar({
-      message: "Htblock ：打开成功",
+      message: "Rapid ：打开成功",
       position: "right-top"
     });
   };
