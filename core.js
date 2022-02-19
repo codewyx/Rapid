@@ -1,4 +1,4 @@
-//rewrite by 白篮
+//rewrite by 白篮&SUDA&CODEWYX
 //是改过的
 var Blockly = { constants: {}, LINE_MODE_MULTIPLIER: 40, PAGE_MODE_MULTIPLIER: 125, DRAG_RADIUS: 5, FLYOUT_DRAG_RADIUS: 10, SNAP_RADIUS: 28 };
 Blockly.CONNECTING_SNAP_RADIUS = Blockly.SNAP_RADIUS;
@@ -12012,7 +12012,7 @@ Blockly.blockRendering.register("thrasos", Blockly.thrasos.Renderer);
 Blockly.zelos = {};
 Blockly.zelos.ConstantProvider = function() {
     Blockly.zelos.ConstantProvider.superClass_.constructor.call(this);
-    this.SMALL_PADDING = this.GRID_UNIT = 4;
+    this.SMALL_PADDING = this.GRID_UNIT = 3.8;
     this.MEDIUM_PADDING = 2 * this.GRID_UNIT;
     this.MEDIUM_LARGE_PADDING = 3 * this.GRID_UNIT;
     this.LARGE_PADDING = 4 * this.GRID_UNIT;
