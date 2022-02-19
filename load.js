@@ -54,7 +54,7 @@ function showabout() {
   });  
 mdui.snackbar({
     message: "Theme for 白篮 | Make for 王翊轩&SUDA编程",
-    position: "right-top"
+    position: "right-bottom"
   });
 	
 
