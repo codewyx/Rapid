@@ -49,13 +49,9 @@ function saveHtml() {
 }
 function showabout() {
   mdui.snackbar({
-    message: "Rapid ：Version 0.1.1",
+    message: "Rapid ：Version 0.1.1\nTheme for 白篮 | Make for 王翊轩&SUDA编程",
     position: "right-top"
   });  
-mdui.snackbar({
-    message: "Theme for 白篮 | Make for 王翊轩&SUDA编程",
-    position: "right-bottom"
-  });
 	
 
 
