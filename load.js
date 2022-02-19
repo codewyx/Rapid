@@ -20,7 +20,7 @@ var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementBy
   copy(code);
 
   mdui.snackbar({
-    message: "Htblock ：代码成功生成，已复制！",
+    message: "Rapid ：代码成功生成，已复制！",
     position: "right-top"
   });
 }
@@ -43,13 +43,13 @@ function saveHtml() {
   const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
   saveShareContent(code, "myhtml.html");
   mdui.snackbar({
-    message: "Htblock ：Html文件成功下载",
+    message: "Rapid ：Html文件成功下载",
     position: "right-top"
   });
 }
 function showabout() {
   mdui.snackbar({
-    message: "Htblock ：Version 0.1.1",
+    message: "Rapid ：Version 0.1.1",
     position: "right-top"
   });
 }
@@ -59,7 +59,7 @@ function saveblockly() {
   localStorage.setItem("xmlText", Blockly.Xml.domToText(xml));
 
   mdui.snackbar({
-    message: "Htblock ：保存成功",
+    message: "Rapid ：保存成功",
     position: "right-top"
   });
 }
@@ -71,7 +71,7 @@ function nosaveblockly() {
   Blockly.Xml.domToWorkspace(xml, Blockly.getMainWorkspace());
 
   mdui.snackbar({
-    message: "Htblock ：回显成功",
+    message: "Rapid ：回显成功",
     position: "right-top"
   });
 }
