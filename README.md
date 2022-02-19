@@ -14,4 +14,4 @@
 
 #### 文档
 
-1.  进入语雀知识库[]
+1.  进入语雀知识库[https://www.yuque.com/codewyx/rapid]
