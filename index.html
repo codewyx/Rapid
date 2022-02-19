@@ -27,7 +27,7 @@
 				        <a href="javascript:;"onclick="dosaveblockly()"class="mdui-ripple">保存至本地</a>
 				      </li>
 				      <li class="mdui-menu-item">
-				        <a href="javascript:;" onclick="saveblockly()" class="mdui-ripple">保存至缓冲</a>
+				        <a href="javascript:;" onclick="saveblockly()" class="mdui-ripple">临时保存</a>
 				      </li>
 				    </ul>	
 				<a href="javascript:;" mdui-menu="{target: '#example-2'}"  class="mdui-typo-subheading">打开</a>
@@ -36,14 +36,11 @@
 				    <a href="javascript:;" onclick="donosaveblockly()"class="mdui-ripple">从本地打开</a>
 				  </li>
 				  <li class="mdui-menu-item">
-				    <a href="javascript:;" onclick="nosaveblockly()" class="mdui-ripple">从缓冲打开</a>
+				    <a href="javascript:;" onclick="nosaveblockly()" class="mdui-ripple">从临时保存打开</a>
 				  </li>
 				</ul>
 				<a href="javascript:;"mdui-menu="{target: '#example-3'}"  " class="mdui-typo-subheading">导出</a>
 				<ul class="mdui-menu " id="example-3">
-				  <li class="mdui-menu-item">
-				    <a href="javascript:;" onclick="showHtml()"class="mdui-ripple">生成代码并复制</a>
-				  </li>
 				  <li class="mdui-menu-item">
 				    <a href="javascript:;" onclick="saveHtml()" class="mdui-ripple">导出为Html文件</a>
 				  </li>
@@ -51,7 +48,7 @@
 				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading">关于</a>
 
 				<div class="mdui-toolbar-spacer"></div>
-				<p class="gmdui-typo-body-2-opacity">Theme for 白篮</p><p class="gmdui-typo-body-2-opacity">Make for 王翊轩</p>
+				<p class="gmdui-typo-body-2-opacity">Theme for 白篮</p><p class="gmdui-typo-body-2-opacity">Make for 王翊轩&SUDA编程</p>
 <br><br><br><br><br>
 			</div>
 		</div>
@@ -61,7 +58,35 @@
 			<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none;background-color: white;opacity: 0.5;">
 				<category name="框架" colour="#6573b8">
 					<block type="top"></block>
+					<block type="html_dingyi"></block>
 					<block type="head"></block>
+					<block type="body"></block>
+					<label text="模板"></label>
+					<block type="top">
+						<next>
+							<block type="html_dingyi">
+								<value name="html01">
+									<block type="head">
+										<next>
+											<block type="body"></block>
+										</next>
+										<value name="head01">
+											<block type="title">
+												<value name="title01">
+													<shadow type="texto">
+														<field name="texto01">网站标题</field>
+													</shadow>
+												</value>
+											</block>									<next>
+
+										</value>
+								</value>
+
+
+							</block>
+					</block>
+					</next>
+					</block>
 				</category>
 				<category name="头部" colour="#b86565">
 					<block type="title">
@@ -72,34 +97,24 @@
 						</value>
 					</block>
 					<block type="link">
-						<field name="link01">text/css</field>
+						<field name="link01">https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css</field>
 						<field name="link02">stylesheet</field>
 						<field name="link03">text/css</field>
+						<field name="link04">Bootstrap5 核心 CSS 文件</field>
 					</block>
-					<block type="style">
-						<value name="NAME">
-							<shadow type="texto">
-								<field name="texto01">body {background-color:yellow} p {color:blue}</field>
-							</shadow>
-						</value>
-					</block>
+				</category>
+				<sep></sep>
+				<category name="HTML常用标签" colour="#b86565">
 				</category>
 				<sep></sep>
 				<category name="文本" colour="#b87a65">
 					<block type="texto">
-						<field name="texto01">我是一串可爱的文本</field>
+						<field name="texto01">文本</field>
 					</block>
-					<block type="textand">
-						<value name="textand01">
-							<shadow type="texto">
-								<field name="texto01">1</field>
-							</shadow>
-						</value>
-						<value name="textand02">
-							<shadow type="texto">
-								<field name="texto01">2</field>
-							</shadow>
-						</value>
+				</category>
+				<sep></sep>
+				<category name="工具" colour="285">
+					<block type="html_code">
 					</block>
 				</category>
 			</xml>

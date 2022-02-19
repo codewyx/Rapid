@@ -1900,7 +1900,7 @@ Blockly.Options = function(a) {
     this.toolboxPosition = p;
     this.theme = Blockly.Options.parseThemeOptions_(a);
     this.keyMap = u;
-    this.renderer = v;
+    this.renderer = 'zelos';
     this.rendererOverrides =
         a.rendererOverrides;
     this.gridPattern = void 0;

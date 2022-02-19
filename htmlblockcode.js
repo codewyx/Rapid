@@ -1,8 +1,7 @@
 
 Blockly.PHP['title'] = function(block) {
-  var value_title01 = Blockly.PHP.valueToCode(block, 'title01', Blockly.PHP.ORDER_ATOMIC);
+    var value_title01 = Blockly.PHP.statementToCode(block, 'title01')
   // TODO: Assemble PHP into code variable.
-  var value_title01 = value_title01.substring(1,(value_title01.length-1))
   var code = '<title>'+value_title01+'</title>\n';
   return code;
 };
@@ -12,7 +11,20 @@ Blockly.PHP['head'] = function(block) {
   var code = '<head>\n'+statements_head01+'\n</head>\n';
   return code;
 };
-
+Blockly.PHP['body'] = function(block) {
+    var statements_body01 = Blockly.PHP.statementToCode(block, 'body01');
+  // TODO: Assemble PHP into code variable.
+  var code = '<body>\n'+statements_body01+'\n</body>\n';
+  return code;
+};
+Blockly.PHP['html_dingyi'] = function(block) {
+    var code = '<html>\n' + Blockly.PHP.statementToCode(block, 'html01')+'\n</html>\n';
+  return code;
+};
+Blockly.PHP['html_code'] = function(block) {
+  var code = block.getFieldValue('code');
+  return code + '\n';
+};
 Blockly.PHP['top'] = function(block) {
   // TODO: Assemble PHP into code variable.
   var code = '<!DOCTYPE html>\n';
@@ -23,35 +35,19 @@ Blockly.PHP['texto'] = function(block) {
   // TODO: Assemble PHP into code variable.
   var code = text_texto01;
   // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.PHP.ORDER_NONE];
+  return code;
 };
-
-
 Blockly.PHP['link'] = function(block) {
   var text_link01 = block.getFieldValue('link01');
   var text_link02 = block.getFieldValue('link02');
   var text_link03 = block.getFieldValue('link03');
-  // TODO: Assemble PHP into code variable.
-  var code = '<link rel="'+text_link01+'" type="'+text_link02+'" href="'+text_link03+'">\n';
-  return code;
-};
+    var text_link04 = block.getFieldValue('link04');
+    // TODO: Assemble PHP into code variable.
+    if (text_link04 != '') {
+        var code = '<!--' + text_link04+ "-->" + '\n<link rel="' + text_link01 + '" type="' + text_link02 + '" href="' + text_link03 + '">\n';
+    } else {
+      var code = '<link rel="'+text_link01+'" type="'+text_link02+'" href="'+text_link03+'">\n';
+    }
 
-Blockly.PHP['style'] = function(block) {
-  var value_name = Blockly.PHP.valueToCode(block, 'NAME', Blockly.PHP.ORDER_ATOMIC);
-    var value_name = value_name.substring(1,(value_name.length-1))
-  // TODO: Assemble PHP into code variable.
-  var code = '<style type="text/css">'+value_name+'</style>\n';
-  
   return code;
-};
-
-Blockly.PHP['textand'] = function(block) {
-  var value_textand01 = Blockly.PHP.valueToCode(block, 'textand01', Blockly.PHP.ORDER_ATOMIC);
-      var value_textand01 = value_textand01.substring(1,(value_textand01.length-1))
-  var value_textand02 = Blockly.PHP.valueToCode(block, 'textand02', Blockly.PHP.ORDER_ATOMIC);
-      var value_textand02 = value_textand02.substring(1,(value_textand02.length-1))
-  // TODO: Assemble PHP into code variable.
-  var code = value_textand01+value_textand02;
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.PHP.ORDER_NONE];
 };
