@@ -12,7 +12,7 @@ function dosaveblockly() {
     document.body.removeChild(downLink);
   }
   const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
-  saveShareContent(Blockly.Xml.domToText(xml), "myxml.hbd");
+  saveShareContent(Blockly.Xml.domToText(xml), "myxml.htb");
   mdui.snackbar({
     message: "Htblock ：下载成功",
     position: "right-top"
