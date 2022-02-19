@@ -1,7 +1,6 @@
 function Base64() {  
-
     // private property  
-    _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";  
+    _keyStr = "1234567890~`[]{}|\<>,.?:;'abcdefghijklmnopqrstuvwxyz!@#$%^&*()+/=";  
 
     // public method for encoding  
     this.encode = function (input) {  
