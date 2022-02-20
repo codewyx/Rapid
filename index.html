@@ -10,8 +10,11 @@
 		<script src="htmlblock.js"></script>
 		<script src="htmlblockcode.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
+		  <link rel="stylesheet" href="https://layui.org.cn/res/layui/dist/css/layui.css"/>
+		
 		<link rel="shortcut icon" href="icon.png">
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+		    <script src="https://layui.org.cn/res/layui/dist/layui.js"></script>
 <script
   src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
   integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
@@ -23,7 +26,30 @@
 			<div class="mdui-toolbar  mdui-color-teal-600">
 				<img src="logo.png" height="40" width="190">
 
-                <a href="javascript:;" mdui-menu="{target: '#example-1'}" class="mdui-typo-subheading">保存</a>
+                <a href="javascript:;"  id="demo1" class="mdui-typo-subheading">保存</a>
+				<script>
+layui.use('dropdown', function(){
+  var dropdown = layui.dropdown
+  dropdown.render({
+    elem: '#demo1' //可绑定在任意元素中，此处以上述按钮为例
+    ,data: [{
+      title: 'menu item 1'
+      ,id: 100
+      ,href: 'onclick="dosaveblockly()"'
+    },{
+      title: 'menu item 2'
+      ,id: 101
+      ,href: 'onclick="saveblockly()"' //开启超链接
+    }]
+    ,id: 'demo1'
+    //菜单被点击的事件
+    ,click: function(obj){
+      console.log(obj);
+    }
+  });
+});
+</script>
+				
 				    <ul class="mdui-menu " id="example-1">
 				      <li class="mdui-menu-item">
 				        <a href="javascript:;"onclick="dosaveblockly()"class="mdui-ripple">保存至本地</a>
@@ -124,7 +150,7 @@
 
 			<script src="load.js"></script>
 <script src="load2.js"></script>
-<script>console.log(window.location.hostname);if(window.location.hostname!="rapideditor.vercel.app"){window.location.href="https://rapideditor.vercel.app/"; }</script>
+<script>/*console.log(window.location.hostname);if(window.location.hostname!="rapideditor.vercel.app"){window.location.href="https://rapideditor.vercel.app/"; window.alert("正在维护更新中");}*/</script>
 	</body>
 
 </html>
