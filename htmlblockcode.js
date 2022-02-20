@@ -60,3 +60,10 @@ Blockly.PHP['head'] = function(block) {
 
   return code;
 };
+
+Blockly.PHP['p'] = function(block) {
+    var value_p01 = Blockly.PHP.statementToCode(block, 'p01')
+  // TODO: Assemble PHP into code variable.
+  var code = '<p>'+value_p01+'</p>\n';
+  return code;
+};
