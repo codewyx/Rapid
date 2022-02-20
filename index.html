@@ -33,12 +33,10 @@ layui.use('dropdown', function(){
   dropdown.render({
     elem: '#demo1' //可绑定在任意元素中，此处以上述按钮为例
     ,data: [{
-      title: '保存至本地'
-    ,templet: '<li><div class="layui-menu-body-title" onclick="dosaveblockly()">保存至本地</div></li>'
+    templet: '<li><div class="layui-menu-body-title" onclick="dosaveblockly()">保存至本地</div></li>'
       ,id: 100
     },{
-      title: '临时保存'
-	        ,templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时保存</div></li>'
+templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时保存</div></li>'
       ,id: 101
     }]
     ,id: 'demo1'
