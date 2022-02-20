@@ -123,17 +123,7 @@ var result = base.encode(str);
     position: "right-top"
   });
 }
-function donosaveblockly() {
-  mdui.dialog({
-    title: "上传文件",
-    content: '<input type="file" id="file_id" onchange="readFile()">',
-    buttons: [
-      {
-        text: "关闭"
-      }
-    ]
-  });
-}
+
 function readFile() {
   const objFile = document.getElementById("file_id");
   if (objFile.value === "") {
