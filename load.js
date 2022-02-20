@@ -49,7 +49,7 @@ function saveHtml() {
 }
 function showabout() {
   mdui.snackbar({
-    message: "Rapid ：Version 0.1.2 | 白篮&王翊轩&SUDA编程",
+    message: "Rapid ：Version 0.1.2G2 | 白篮&王翊轩&SUDA编程",
     position: "right-top"
   });  
 	
