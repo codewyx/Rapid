@@ -9,7 +9,7 @@
 
 #### 使用说明
 
-打开[https://rapideditor.vercel.app/]即可
+打开[https://rapideditor.vercel.app/](https://rapideditor.vercel.app/) 即可
 
 
 #### 文档
