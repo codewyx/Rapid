@@ -153,3 +153,6 @@ function openFile() {
 
   // 读取文件
 }
+function myFunction() {
+   document.getElementById('files').click() 
+}
