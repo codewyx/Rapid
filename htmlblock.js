@@ -141,3 +141,26 @@ Blockly.Blocks['p'] = {
  this.setHelpUrl("");
   }
 };
+Blockly.Blocks['hr'] = {
+  init: function() {
+     this.appendDummyInput()
+        .appendField("插入水平线");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip("一个小小的水平线");
+ this.setHelpUrl("");
+  }
+};
+Blockly.Blocks['br'] = {
+  init: function() {
+     this.appendDummyInput()
+        .appendField("插入换行符");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip("一个小小的换行符");
+ this.setHelpUrl("");
+  }
+};
+
