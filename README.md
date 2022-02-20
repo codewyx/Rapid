@@ -7,9 +7,9 @@
 纯Html+Js
 
 
-#### 安装教程
+#### 使用说明
 
-无需安装，浏览器中即可使用
+打开[https://rapideditor.vercel.app/]即可
 
 
 #### 文档
