@@ -112,3 +112,20 @@ Blockly.Blocks['link'] = {
  this.setHelpUrl("");
   }
 };
+Blockly.Blocks['head'] = {
+  init: function() {
+        this.appendDummyInput()
+        .appendField("插入标题文字");
+    this.appendDummyInput()
+        .appendField("大小：（1-6）")
+        .appendField(new Blockly.FieldTextInput("1"), "head01");
+    this.appendDummyInput()
+        .appendField("文字内容：")
+        .appendField(new Blockly.FieldTextInput("stylesheet"), "head02");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip("标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。");
+ this.setHelpUrl("");
+  }
+};
