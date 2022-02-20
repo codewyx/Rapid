@@ -51,11 +51,12 @@ Blockly.PHP['link'] = function(block) {
 
   return code;
 };
+
 Blockly.PHP['head'] = function(block) {
   var text_head01 = block.getFieldValue('head01');
   var text_head02 = block.getFieldValue('head02');
     // TODO: Assemble PHP into code variable.
-      var code = '<h'+text_head01+'>'+text_head02+'</h'+text_head01+'>'\n';
+      var code = '<h'+text_head01+'>'+text_head02+'</h'+text_head01+'>\n';
 
   return code;
 };
