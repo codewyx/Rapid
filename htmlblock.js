@@ -129,3 +129,15 @@ Blockly.Blocks['head'] = {
  this.setHelpUrl("");
   }
 };
+Blockly.Blocks['p'] = {
+  init: function() {
+    this.appendValueInput("p01")
+        .setCheck(null)
+        .appendField("插入段落");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip("一个小小的段落");
+ this.setHelpUrl("");
+  }
+};
