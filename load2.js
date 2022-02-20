@@ -125,7 +125,7 @@ var result = base.encode(str);
 }
 
 function openFile() {
-  const objFile = document.getElementById("file_id");
+  const objFile = document.getElementById("files");
   if (objFile.value === "") {
     alert("请选择文件！");
     return;
