@@ -112,7 +112,7 @@ Blockly.Blocks['link'] = {
  this.setHelpUrl("");
   }
 };
-Blockly.Blocks['head'] = {
+Blockly.Blocks['title_text'] = {
   init: function() {
         this.appendDummyInput()
         .appendField("插入标题文字");
