@@ -124,7 +124,7 @@ var result = base.encode(str);
   });
 }
 
-function readFile() {
+function openFile() {
   const objFile = document.getElementById("file_id");
   if (objFile.value === "") {
     alert("请选择文件！");
