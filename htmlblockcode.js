@@ -67,3 +67,18 @@ Blockly.PHP['p'] = function(block) {
   var code = '<p>'+value_p01+'</p>\n';
   return code;
 };
+Blockly.PHP['br'] = function(block) {
+  // TODO: Assemble PHP into code variable.
+  var code = '<br></br>\n';
+  return code;
+};
+Blockly.PHP['br'] = function(block) {
+  // TODO: Assemble PHP into code variable.
+  var code = '<br>\n';
+  return code;
+};
+Blockly.PHP['hr'] = function(block) {
+  // TODO: Assemble PHP into code variable.
+  var code = '<hr>\n';
+  return code;
+};
