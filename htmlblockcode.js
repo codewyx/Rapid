@@ -57,19 +57,12 @@ Blockly.PHP['head'] = function(block) {
   var text_head02 = block.getFieldValue('head02');
     // TODO: Assemble PHP into code variable.
       var code = '<h'+text_head01+'>'+text_head02+'</h'+text_head01+'>\n';
-
   return code;
 };
-
 Blockly.PHP['p'] = function(block) {
     var value_p01 = Blockly.PHP.statementToCode(block, 'p01')
   // TODO: Assemble PHP into code variable.
   var code = '<p>'+value_p01+'</p>\n';
-  return code;
-};
-Blockly.PHP['br'] = function(block) {
-  // TODO: Assemble PHP into code variable.
-  var code = '<br></br>\n';
   return code;
 };
 Blockly.PHP['br'] = function(block) {
