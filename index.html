@@ -44,16 +44,16 @@ templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时�
 });
 </script>
 				
-				   
+	<input type="file" id="files" style="display: none" onchange="openFile()" accept=".rapid">			   
 <a href="javascript:;"  id="demo2"  class="mdui-typo-subheading">打开</a>
 								<script>
-									<input type="file" id="files" style="display: none" onchange="openFile()" accept=".rapid">
+									
 layui.use('dropdown', function(){
   var dropdown = layui.dropdown
   dropdown.render({
     elem: '#demo2' //可绑定在任意元素中，此处以上述按钮为例
     ,data: [{
-    templet: '<li><div class="layui-menu-body-title" onclick="document.getElementById("files").click();">从本地打开</div></li>'
+    templet: '<li><div class="layui-menu-body-title" onclick="document.getElementById("files").click()">从本地打开</div></li>'
       ,id: 102
     },{
 templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从临时保存打开</div></li>'
