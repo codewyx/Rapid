@@ -1,81 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-	<head>
-		<title>Rapid</title>
-		<meta charset="UTF-8">
-		<link rel="shortcut icon" href="icon.png">
-		<style>
-            /* From cssbuttons.io by @alexmaracinaru */
-            .btn-start {
+<head>
+    <title>Rapid</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* From cssbuttons.io by @alexmaracinaru */
+        .btn-start {
+            position: relative;
+            margin: auto;
+            padding: 12px 18px;
+            transition: all 0.2s ease;
+            border: none;
+            background: none;
+            text-decoration: none;
+        }
+
+            .btn-start:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border-radius: 50px;
+                background: #b1dae7;
+                width: 45px;
+                height: 45px;
+                transition: all 0.3s ease;
+            }
+
+            .btn-start span {
                 position: relative;
-                margin: auto;
-                padding: 12px 18px;
-                transition: all 0.2s ease;
-                border: none;
-                background: none;
+                font-family: "Ubuntu", sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 0.05em;
+                color: #000000;
                 text-decoration: none;
             }
 
-                .btn-start:before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    display: block;
-                    border-radius: 50px;
-                    background: #b1dae7;
-                    width: 45px;
-                    height: 45px;
-                    transition: all 0.3s ease;
-                }
+            .btn-start svg {
+                position: relative;
+                top: 0;
+                margin-left: 10px;
+                fill: none;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke: #234567;
+                stroke-width: 2;
+                transform: translateX(-5px);
+                transition: all 0.3s ease;
+            }
 
-                .btn-start span {
-                    position: relative;
-                    font-family: "Ubuntu", sans-serif;
-                    font-size: 18px;
-                    font-weight: 700;
-                    letter-spacing: 0.05em;
-                    color: #000000;
-                    text-decoration: none;
-                }
+            .btn-start:hover:before {
+                width: 100%;
+                background: #b1dae7;
+            }
 
-                .btn-start svg {
-                    position: relative;
-                    top: 0;
-                    margin-left: 10px;
-                    fill: none;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke: #234567;
-                    stroke-width: 2;
-                    transform: translateX(-5px);
-                    transition: all 0.3s ease;
-                }
+            .btn-start:hover svg {
+                transform: translateX(0);
+            }
 
-                .btn-start:hover:before {
-                    width: 100%;
-                    background: #b1dae7;
-                }
+            .btn-start:active {
+                transform: scale(0.95);
+            }
 
-                .btn-start:hover svg {
-                    transform: translateX(0);
-                }
+        html body {
+            background-color: #93c7d0;
+        }
 
-                .btn-start:active {
-                    transform: scale(0.95);
-                }
-		</style>
-	</head>
+        .card {
+            position: fixed;
+            width: 90%;
+            height: 80%;
+            border-radius: 30px;
+            background: #f4f4f4;
+            box-shadow: 15px 15px 30px #b1dae7, -15px -15px 30px #ffffff;
+            margin: 0 auto;
+            transition: box-shadow 0.5s,transform 0.5s;
+            left: 5%;
+            top: 10%;
+        }
+
+            .card h2, .card p {
+                margin: 15px 30px;
+            }
+
+            .card .btn-start {
+                margin: 50px 30px;
+            }
+
+            .card:hover {
+                box-shadow: 5px 5px 30px #b1dae7, -15px -15px 30px #ffffff;
+                transform: scale(1.05)
+            }
+    </style>
+</head>
     <body>
-        <h1>使用Rapid制作你的网站！</h1>
-        <p>使用Rapid，抛弃繁琐的代码，轻松制作你的网站！</p>
-        <a href="/editor/index.html" class="btn-start">
-            <span>开始制作你的网站</span>
-            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-        </a>
+        <div class="card">
+            <h2>使用Rapid制作你的网站！</h2>
+            <p>使用Rapid，抛弃繁琐的代码，轻松制作你的网站！</p>
+            <a href="/editor/index.html" class="btn-start">
+                <span>开始制作你的网站</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </a>
+        </div>
     </body>
 </html>
 
