@@ -75,3 +75,19 @@ Blockly.PHP['hr'] = function(block) {
   var code = '<hr>\n';
   return code;
 };
+Blockly.PHP['div'] = function(block) {
+  var statements_div00 = Blockly.PHP.statementToCode(block, 'div00');
+  var text_div01 = block.getFieldValue('div01');
+  var text_div02 = block.getFieldValue('div02');
+    // TODO: Assemble PHP into code variable.
+        if (text_div01 == ''&&text_div02 == '') {
+        var code = '<div>\n'+statements_div00+'\n</div>\n';
+    }  else if (text_div02 == '') {
+       var code = '<div class='+text_div01+'>\n'+statements_div00+'\n</div>\n';
+    }else if (text_div01 == '') {
+       var code = '<div id='+text_div02+'>\n'+statements_div00+'\n</div>\n';
+    }else{
+     var code = '<div id='+text_div02+' class='+text_div01+'>\n'+statements_div00+'\n</div>\n';
+    }
+  return code;
+};
