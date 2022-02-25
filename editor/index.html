@@ -14,6 +14,15 @@
 		  <link rel="stylesheet" href="https://layui.org.cn/res/layui/dist/css/layui.css"/>
 		
 		<link rel="shortcut icon" href="icon2.png">
+		<style>
+.dark{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    outline:5000px solid rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+}
+</style>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		    <script src="https://layui.org.cn/res/layui/dist/layui.js"></script>
 <script
@@ -190,7 +199,10 @@ layui.use('dropdown', function(){
 				</category>
 			</xml>
 		</div>	
-
+  <script src="https://cdn.bootcss.com/Darkmode.js/1.4.0/darkmode-js.js"></script>
+<script>
+  new Darkmode({ label: '<i class="mdui-icon material-icons">&#xe3ab;</i>' }).showWidget();
+</script>
 			<script src="load.js"></script>
 <script src="load2.js"></script>
 		      
