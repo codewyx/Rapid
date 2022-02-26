@@ -157,7 +157,7 @@ function myFunction() {
    document.getElementById('files').click() 
 }
 
-function opeWindow() {
+function openWindow() {
 //HTML转义
 function HTMLEncode(html) {
 var temp = document.createElement("div");
