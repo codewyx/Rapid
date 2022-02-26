@@ -167,10 +167,24 @@ function openWindow() {
  });
 }
     var codes=html2Escape(code)
-function str2utf8(str) {
-    return eval('\''+encodeURI(str).replace(/%/gm, '\\x')+'\'');
+function ch2Unicdoe(str){
+	if(!str){
+		return;
+	}
+	var unicode = '';
+	for (var i = 0; i <  str.length; i++) {
+		var temp = str.charAt(i);
+		if(isChinese(temp)){
+			unicode += '\\u' +  temp.charCodeAt(0).toString(16);
+		}
+		else{
+			unicode += temp;
+		}
+	}
+	return unicode;
 }
-     var codes2=str2utf8(codes)
+
+     var codes2=ch2Unicdoe(codes)
     layer.open({
   title: '在线调试'
   ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes2+'" width="500" height="300"></iframe>'      
