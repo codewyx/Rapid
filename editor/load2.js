@@ -167,12 +167,10 @@ function openWindow() {
  });
 }
     var codes=html2Escape(code)
-    
 
-     var codes2=encodeURIComponent(codes)
     layer.open({
   title: '在线调试'
-  ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes2+'" width="500" height="300"></iframe>'      
+  ,content: '<pre class="layui-code">'+codes+'</pre><div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>在线测试</strong></div>'+codes+'</div></div></div>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
