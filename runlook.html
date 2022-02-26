@@ -3,25 +3,7 @@
 	<head>
 		<meta charset="UTF-8">  
 <script>
-function toUtf8(str) {   
-    var out, i, len, c;   
-    out = "";   
-    len = str.length;   
-    for(i = 0; i < len; i++) {   
-        c = str.charCodeAt(i);   
-        if ((c >= 0x0001) && (c <= 0x007F)) {   
-            out += str.charAt(i);   
-        } else if (c > 0x07FF) {   
-            out += String.fromCharCode(0xE0 | ((c >> 12) & 0x0F));   
-            out += String.fromCharCode(0x80 | ((c >>  6) & 0x3F));   
-            out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));   
-        } else {   
-            out += String.fromCharCode(0xC0 | ((c >>  6) & 0x1F));   
-            out += String.fromCharCode(0x80 | ((c >>  0) & 0x3F));   
-        }   
-    }   
-    return out;   
-}
+
 function getQueryString(name) {
 var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
 var r = window.location.search.substr(1).match(reg);
@@ -35,7 +17,7 @@ if (r != null) return unescape(r[2]); return null;
   });
 }
 
-document.write(toUtf8(escape2Html(getQueryString("html"))))
+document.write(escape2Html(getQueryString("html")))
 
 </script>
 	</head>
