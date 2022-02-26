@@ -167,9 +167,8 @@ function openWindow() {
  });
 }
     var codes=html2Escape(code)
-    function str2utf8(str) {
-    encoder = new TextEncoder('utf8');
-    return encoder.encode(str);
+function str2utf8(str) {
+    return eval('\''+encodeURI(str).replace(/%/gm, '\\x')+'\'');
 }
      var codes2=str2utf8(codes)
     layer.open({
