@@ -68,6 +68,7 @@ function saveblockly() {
 }
 
 function nosaveblockly() {
+Blockly.getMainWorkspace().clear();
   // 需要将保存的 xmlText 转为 xml dom 对象
   const xml = Blockly.Xml.textToDom(localStorage.getItem("xmlText"));
   // 回显数据
