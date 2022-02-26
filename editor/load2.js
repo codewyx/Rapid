@@ -168,7 +168,6 @@ return output;
 }
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
-console.log(HTMLEncode(str));
     layer.open({
   title: '在线调试'
   ,content: HTMLEncode(code)
