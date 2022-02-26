@@ -159,18 +159,11 @@ function myFunction() {
 
 function openWindow() {
 //HTML转义
-function HTMLEncode(html) {
-var temp = document.createElement("div");
-(temp.textContent != null) ? (temp.textContent = html) : (temp.innerText = html);
-var output = temp.innerHTML;
-temp = null;
-return output;
-}
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
     layer.open({
   title: '在线调试'
-  ,content: HTMLEncode(code)
+  ,content: '<pre class="layui-code">'+code+'</pre>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
@@ -178,5 +171,9 @@ return output;
 ,anim: 5
 ,resize:true
 });     
+    layui.code({
+          title: 'HTML'
+  ,encode: true //是否转义html标签。默认不开启
+});
   
     }
