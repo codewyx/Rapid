@@ -173,7 +173,7 @@ return output;
   ,content: HTMLEncode(code)
 ,shade:"0"
 ,offset: 'r'
-,area: ['5100px', '510px']
+,area: ['510px', '510px']
 ,type: 1
 ,anim: 5
 ,resize:true
