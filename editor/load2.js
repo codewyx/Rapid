@@ -166,15 +166,15 @@ var output = temp.innerHTML;
 temp = null;
 return output;
 }
-  const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
-  var str = Blockly.Xml.domToText(xml);  
+  Blockly.PHP.INFINITE_LOOP_TRAP = true;
+  var code = Blockly.PHP.workspaceToCode(demoWorkspace);
 console.log(HTMLEncode(str));
     layer.open({
   title: '在线调试'
-  ,content: HTMLEncode(str)
+  ,content: HTMLEncode(code)
 ,shade:"0"
 ,offset: 'r'
-,area: ['calc(10vh - 100px)', 'calc(10vw - 10px);']
+,area: ['5100px', '510px']
 ,type: 1
 ,anim: 5
 ,resize:true
