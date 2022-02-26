@@ -170,7 +170,7 @@ function openWindow() {
 
     layer.open({
   title: '在线调试'
-  ,content: '<pre class="layui-code">'+codes+'</pre><div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>在线测试</strong></div>'+codes+'</div></div></div>'      
+  ,content: '<pre class="layui-code">'+codes+'</pre><div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>在线测试</strong></div>'+code+'</div></div></div>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
