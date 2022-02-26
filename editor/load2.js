@@ -156,3 +156,28 @@ function openFile() {
 function myFunction() {
    document.getElementById('files').click() 
 }
+
+function opeWindow() {
+//HTML转义
+function HTMLEncode(html) {
+var temp = document.createElement("div");
+(temp.textContent != null) ? (temp.textContent = html) : (temp.innerText = html);
+var output = temp.innerHTML;
+temp = null;
+return output;
+}
+  const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
+  var str = Blockly.Xml.domToText(xml);  
+console.log(HTMLEncode(str));
+    layer.open({
+  title: '在线调试'
+  ,content: HTMLEncode(str)
+,shade:"0"
+,offset: 'r'
+,area: ['calc(10vh - 100px)', 'calc(10vw - 10px);']
+,type: 1
+,anim: 5
+,resize:true
+});     
+  
+    }
