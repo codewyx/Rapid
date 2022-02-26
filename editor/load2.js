@@ -169,7 +169,7 @@ function openWindow() {
     var codes=html2Escape(code)
     layer.open({
   title: '在线调试'
-  ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runhtml.html?html'+codes+'" width="200" height="200"></iframe>'      
+  ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes+'" width="500" height="300"></iframe>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
