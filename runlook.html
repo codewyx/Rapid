@@ -3,6 +3,26 @@
 	<head>
 		<meta charset="UTF-8">  
 <script>
+	function gb2utf8(data){
+      var glbEncode = [];
+      gb2utf8_data = data;
+      execScript("gb2utf8_data = MidB(gb2utf8_data, 1)", "VBScript");
+      var t=escape(gb2utf8_data).replace(/%u/g,"").replace(/(.{2})(.{2})/g,"%$2%$1").replace(/%([A-Z].)%(.{2})/g,"@$1$2");
+      t=t.split("@");
+      var i=0,j=t.length,k;
+      while(++i<j) {
+         k=t[i].substring(0,4);
+         if(!glbEncode[k]) 
+         {
+            gb2utf8_char = eval("0x"+k);
+            execScript("gb2utf8_char = Chr(gb2utf8_char)", "VBScript");
+            glbEncode[k]=escape(gb2utf8_char).substring(1,6);
+         }
+         t[i]=glbEncode[k]+t[i].substring(4);
+      }
+      gb2utf8_data = gb2utf8_char = null;
+      return unescape(t.join("%"));
+ }
 function getQueryString(name) {
 var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
 var r = window.location.search.substr(1).match(reg);
@@ -15,6 +35,6 @@ if (r != null) return unescape(r[2]); return null;
     return arrEntities[t];
   });
 }
-document.write(escape2Html(getQueryString("html")))
+document.write(gb2utf8(escape2Html(getQueryString("html"))))
 </script>
 	</head>
