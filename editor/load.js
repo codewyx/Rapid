@@ -49,7 +49,7 @@ function saveHtml() {
 }
 function showabout() {
   mdui.snackbar({
-    message: "Rapid ：Version 0.1.5",
+    message: "Rapid ：Version 0.1.6",
     position: "right-top"
   });  
 	
