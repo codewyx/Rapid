@@ -167,9 +167,14 @@ function openWindow() {
  });
 }
     var codes=html2Escape(code)
+    function str2utf8(str) {
+    encoder = new TextEncoder('utf8');
+    return encoder.encode(str);
+}
+     var codes2=str2utf8(codes)
     layer.open({
   title: '在线调试'
-  ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes+'" width="500" height="300"></iframe>'      
+  ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes2+'" width="500" height="300"></iframe>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
