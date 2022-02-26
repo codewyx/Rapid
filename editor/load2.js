@@ -168,27 +168,8 @@ function openWindow() {
 }
     var codes=html2Escape(code)
     
-function isChinese(s){
-	return /[\u4e00-\u9fa5]/.test(s);
-}
-function ch2Unicdoe(str){
-	if(!str){
-		return;
-	}
-	var unicode = '';
-	for (var i = 0; i <  str.length; i++) {
-		var temp = str.charAt(i);
-		if(isChinese(temp)){
-			unicode += '\\u' +  temp.charCodeAt(0).toString(16);
-		}
-		else{
-			unicode += temp;
-		}
-	}
-	return unicode;
-}
 
-     var codes2=ch2Unicdoe(codes)
+     var codes2=encodeURIComponent(codes)
     layer.open({
   title: '在线调试'
   ,content: '<pre class="layui-code">'+codes+'</pre><iframe src="../runlook.html?html='+codes2+'" width="500" height="300"></iframe>'      
