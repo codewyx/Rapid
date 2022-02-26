@@ -161,9 +161,15 @@ function openWindow() {
 //HTML转义
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
+    function html2Escape(sHtml) {
+ return sHtml.replace(/[<>&"]/g,function(c){
+   return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+ });
+}
+    var codes=html2Escape(code)
     layer.open({
   title: '在线调试'
-  ,content: '<pre class="layui-code">'+code+'</pre>'      
+  ,content: '<pre class="layui-code">'+codes+'</pre>'      
 ,shade:"0"
 ,offset: 'r'
 ,area: ['510px', '510px']
