@@ -167,6 +167,10 @@ function openWindow() {
  });
 }
     var codes=html2Escape(code)
+    
+function isChinese(s){
+	return /[\u4e00-\u9fa5]/.test(s);
+}
 function ch2Unicdoe(str){
 	if(!str){
 		return;
