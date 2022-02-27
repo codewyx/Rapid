@@ -200,6 +200,11 @@ function myTimer() {
 });
   
     }
-window.onbeforeunload = function(event){	
-	return '你保存了吗？真的要关闭吗？（如果保存了当我没说）'; 
+window.onbeforeunload = function(event){
+	    mdui.snackbar({
+      message: "Rapid ：你保存了吗？真的要关闭吗？",
+      position: "right-top"
+    });
+  };
+	return '???'; 
 };
