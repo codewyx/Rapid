@@ -162,9 +162,6 @@ function myFunction() {
  });
 }
 function openWindow() {
-//HTML转义
-
-  await sleep(1000)
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
             var codes=html2Escape(code)
