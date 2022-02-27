@@ -173,12 +173,12 @@ function myTimer() {
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code" id="001"></pre></div></div></div>'
 ,shade: 0
-,area: ['510px', '510px']
+,area: ['400px','700px']
 ,type: 1
 ,anim: 5
-,offset: 'l'
+,offset: 'r'
 ,resize:true
-,tipsMore: true
+,tipsMore: false
 });   
     layui.code({
           title: 'HTML'
