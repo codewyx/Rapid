@@ -171,22 +171,21 @@ function openWindow() {
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code">'+codes+'</pre></div></div></div>'
 ,shade: [0.5, '#00897B']
-,offset: '10px'
 ,area: ['510px', '510px']
 ,tipsMore: true
 ,type: 1
 ,anim: 5
+,offset: 'l'
 ,resize:true
 });   
     layer.open({
   title: '网页测试'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>网页测试</strong><br></div>'+code+'</div></div></div>'      
-,shade: [0.5, '#00897B']
 ,area: ['510px', '510px']
 ,tipsMore: true
 ,type: 1
 ,anim: 5
-,offset: '550px'
+,offset: 'r'
 ,resize:true
 });     
     layui.code({
