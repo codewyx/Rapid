@@ -200,3 +200,6 @@ function myTimer() {
 });
   
     }
+window.onbeforeunload = function(event){	
+	return '你保存了吗？真的要关闭吗？（如果保存了当我没说）'; 
+};
