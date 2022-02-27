@@ -166,7 +166,7 @@ function openWindow() {
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 const repeatedGreetings = async () => {
-  await sleep(100)
+  await sleep(1000)
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
             var codes=html2Escape(code)
