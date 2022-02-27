@@ -163,13 +163,13 @@ function myFunction() {
 }
 function openWindow() {
     
-    function get111(){
-  Blockly.PHP.INFINITE_LOOP_TRAP = true;
+var myVar = setInterval(function(){ myTimer() }, 1000);
+function myTimer() {
+      Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
             var codes=html2Escape(code)
             document.getElementById("001").innerHTML = codes
-            }
-    setInterval("get111()",1000);
+}
     layer.open({
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code" id="001"></pre></div></div></div>'
