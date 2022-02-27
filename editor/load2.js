@@ -170,7 +170,7 @@ function openWindow() {
     layer.open({
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code">'+codes+'</pre></div></div></div>'
-,shade: [0.5, '#00897B']
+,shade: 0
 ,area: ['510px', '510px']
 ,tipsMore: true
 ,type: 1
