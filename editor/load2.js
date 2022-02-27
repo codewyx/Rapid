@@ -164,18 +164,10 @@ function myFunction() {
 function openWindow() {
 //HTML转义
 
-const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
-const repeatedGreetings = async () => {
   await sleep(1000)
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
             var codes=html2Escape(code)
-}
-while(true){
-repeatedGreetings()
-}
-
-
     layer.open({
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code">'+codes+'</pre></div></div></div>'
