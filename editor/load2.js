@@ -178,7 +178,6 @@ function myTimer() {
 ,anim: 5
 ,offset: 'r'
 ,resize:true
-,tipsMore: false
 });   
     layui.code({
           title: 'HTML'
