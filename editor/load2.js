@@ -184,6 +184,7 @@ function openWindow() {
 ,area: ['510px', '510px']
 ,tipsMore: true
 ,type: 1
+,shade: 0
 ,anim: 5
 ,offset: 'r'
 ,resize:true
