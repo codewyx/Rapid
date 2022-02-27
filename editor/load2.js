@@ -205,6 +205,5 @@ window.onbeforeunload = function(event){
       message: "Rapid ：你保存了吗？真的要关闭吗？",
       position: "right-top"
     });
-  };
-	return '???'; 
+	return '???快保存！'; 
 };
