@@ -179,6 +179,7 @@ function myTimer() {
 ,anim: 5
 ,offset: 'l'
 ,resize:true
+,tipsMore: true
 });   
     
  /*   layer.open({
