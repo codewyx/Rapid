@@ -162,7 +162,13 @@ function myFunction() {
  });
 }
 function openWindow() {
-    
+var myVar = setInterval(function(){ myTimer() }, 1000);
+function myTimer() {
+      Blockly.PHP.INFINITE_LOOP_TRAP = true;
+  var code = Blockly.PHP.workspaceToCode(demoWorkspace);
+            var codes=html2Escape(code)
+            document.getElementById("001").innerHTML = codes
+}
     layer.open({
   title: '代码转换'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code" id="001"></pre></div></div></div>'
@@ -174,18 +180,6 @@ function openWindow() {
 ,resize:true
 ,tipsMore: true
 });   
-    
- /*   layer.open({
-  title: '网页测试'
-  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>网页测试</strong><br></div>'+code+'</div></div></div>'      
-,area: ['510px', '510px']
-,type: 1
-,shade: 0
-,anim: 5
-,offset: 'r'
-,resize:true
-});  
-*/
     layui.code({
           title: 'HTML'
   ,encode: true //是否转义html标签。默认不开启
