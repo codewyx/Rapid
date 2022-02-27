@@ -171,7 +171,7 @@ function myTimer() {
 }
     layer.open({
   title: '代码转换'
-  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code" id="001"></pre></div></div></div>'
+  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code"><div id="001"></div></pre></div></div></div>'
 ,shade: 0
 ,area: ['400px','700px']
 ,type: 1
@@ -179,9 +179,8 @@ function myTimer() {
 ,offset: 'r'
 ,resize:true
 });   
-    layui.code({
+layui.code({
           title: 'HTML'
-  ,encode: true //是否转义html标签。默认不开启
 });
   
     }
