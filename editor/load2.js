@@ -186,7 +186,6 @@ function myTimer() {
   title: '网页测试'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>网页测试</strong><br></div>'+code+'</div></div></div>'      
 ,area: ['510px', '510px']
-,tipsMore: true
 ,type: 1
 ,shade: 0
 ,anim: 5
