@@ -175,7 +175,6 @@ function myTimer() {
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div class="mdui-typo-title"><strong>代码转换</strong><br></div><pre class="layui-code" id="001"></pre></div></div></div>'
 ,shade: 0
 ,area: ['510px', '510px']
-,tipsMore: true
 ,type: 1
 ,anim: 5
 ,offset: 'l'
