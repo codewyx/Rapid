@@ -22,6 +22,13 @@
     outline:5000px solid rgba(0, 0, 0, 0.3);
     z-index: 99999;
 }
+@media screen and (max-width: 600px) {
+  .useless{
+    display:none;
+    width:0;
+    height:0;
+  }
+}
 </style>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		    <script src="https://layui.org.cn/res/layui/dist/layui.js"></script>
@@ -34,7 +41,7 @@
 	<body>
 <div class="mdui-appbar">
 			<div class="mdui-toolbar  mdui-color-teal-600">
-			<img src="logoin2.png" width="180">
+			<a href="/" class="useless"><img src="logoin2.png" width="180"></a>
 
                 <a href="javascript:;"  id="demo1" class="mdui-typo-subheading">保存</a>
 				<script>
@@ -87,12 +94,12 @@ layui.use('dropdown', function(){
     ,id: 'demo3'
   });
 });
-</script>	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading">调试</a>
-			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading">文档</a>
-				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading">关于</a>
+</script>	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading useless">调试</a>
+			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading useless">文档</a>
+				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading useless">关于</a>
 
 				<div class="mdui-toolbar-spacer"></div>
-<div class="mdui-typo-body-2">模板：白篮 合作：Albert钟 制作：王翊轩&SUDA</div>
+<div class="mdui-typo-body-2 useless">模板：白篮 合作：Albert钟 制作：王翊轩&SUDA</div>
 		</div>
 		<small>&nbsp;</small>
 		<p4>&nbsp;</p4>
