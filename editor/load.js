@@ -1,3 +1,11 @@
+var $ = mdui.$;
+var inst = new mdui.Dialog('#111111aaa');
+
+// method
+$('#open').on('click', function () {
+  inst.open();
+});
+
 var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
 
 		function showHtml() {
@@ -48,13 +56,7 @@ function saveHtml() {
   });
 }
 function about() {
-  var $ = mdui.$;
-var inst = new mdui.Dialog('#111111aaa');
-
-// method
-$('#open').on('click', function () {
-  inst.open();
-});
+  //暂无
 }
 
 function saveblockly() {
