@@ -47,16 +47,14 @@ function saveHtml() {
     position: "right-top"
   });
 }
-function showabout() {
-    layer.open({
-  title: '关于'
-  ,content: '<div class="mdui-typo"><div class="mdui-typo-display-1">Rapid<small>抛弃繁琐的代码，轻松制作你的网站！</small</div></div>'
-,shade: 0
-,area: ['500px','500px']
-,type: 1
-,anim: 5
-,resize:true
-});  
+function about() {
+  var $ = mdui.$;
+var inst = new mdui.Dialog('#111111aaa');
+
+// method
+$('#open').on('click', function () {
+  inst.open();
+});
 }
 
 function saveblockly() {
