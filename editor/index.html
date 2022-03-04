@@ -50,7 +50,7 @@
 			<div class="mdui-toolbar  mdui-color-teal-600">
 			<a href="/" class="useless"><img src="logoin2.png" width="180"></a>
 
-                <a href="javascript:;"  id="demo1" class="mdui-typo-subheading">保存</a>
+                <a href="javascript:;"  id="demo1" class="mdui-typo-subheading">文件</a>
 				<script>
 layui.use('dropdown', function(){
   var dropdown = layui.dropdown
@@ -60,8 +60,23 @@ layui.use('dropdown', function(){
     templet: '<li><div class="layui-menu-body-title" onclick="dosaveblockly()">保存至本地</div></li>'
       ,id: 100
     },{
-templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时保存</div></li>'
+templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时保存到缓冲</div></li>'
       ,id: 101
+    },{
+    templet: '<li></li>'
+      ,id: 102
+    },{
+    templet: '<li><div class="layui-menu-body-title" onclick="myFunction()">从本地打开</div></li>'
+      ,id: 103
+    },{
+templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从临时保存打开</div></li>'
+      ,id: 104
+    },{
+    templet: '<li></li>'
+      ,id: 105
+    },{
+    templet: '<li><div class="layui-menu-body-title" onclick="saveHtml()">导出为Html文件</div></li>'
+      ,id: 106
     }]
     ,id: 'demo1'
   });
@@ -69,39 +84,7 @@ templet: '<li><div class="layui-menu-body-title" onclick="saveblockly()">临时�
 </script>
 				
 	<input type="file" id="files" style="display: none" onchange="openFile()" accept=".rapid">			   
-<a href="javascript:;"  id="demo2"  class="mdui-typo-subheading">打开</a>
-								<script>
-									
-layui.use('dropdown', function(){
-  var dropdown = layui.dropdown
-  dropdown.render({
-    elem: '#demo2' //可绑定在任意元素中，此处以上述按钮为例
-    ,data: [{
-    templet: '<li><div class="layui-menu-body-title" onclick="myFunction()">从本地打开</div></li>'
-      ,id: 102
-    },{
-templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从临时保存打开</div></li>'
-      ,id: 103
-    }]
-    ,id: 'demo2'
-  });
-});
-</script>
-				<a href="javascript:;" id="demo3"   " class="mdui-typo-subheading">导出</a>
-												  
-	<script>
-layui.use('dropdown', function(){
-  var dropdown = layui.dropdown
-  dropdown.render({
-    elem: '#demo3' //可绑定在任意元素中，此处以上述按钮为例
-    ,data: [{
-    templet: '<li><div class="layui-menu-body-title" onclick="saveHtml()">导出为Html文件</div></li>'
-      ,id: 104
-    }]
-    ,id: 'demo3'
-  });
-});
-</script>	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading useless">调试</a>
+	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading useless">调试</a>
 			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading useless">文档</a>
 				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading useless">关于</a>
 
