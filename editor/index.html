@@ -28,6 +28,9 @@
     width:0;
     height:0;
   }
+ .useful{
+    display:inline;
+  }
 }
 			@media screen and (max-width: 952px) {
   .useless-no{
@@ -89,7 +92,8 @@ color: #FFFFFF
 <div class="mdui-appbar">
 			<div class="mdui-toolbar  mdui-color-teal-600">
 			<a href="/" class="useless"><img src="logoin2.png" width="180"></a>
-
+				
+              <strong>  <a href="javascript:;" style="display:none" class="mdui-typo-subheading useful">Rapid手机版</a> </strong>
                 <a href="javascript:;"  id="demo1" class="mdui-typo-subheading">文件</a>
 				<script>
 layui.use('dropdown', function(){
@@ -124,9 +128,9 @@ templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从�
 </script>
 				
 	<input type="file" id="files" style="display: none" onchange="openFile()" accept=".rapid">			   
-	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading">调试</a>
-			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading">文档</a>
-				<a href="javascript:;" onclick="about()" id="open" class="mdui-typo-subheading">关于</a>
+	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading useless ">调试</a>
+			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading useless ">文档</a>
+				<a href="javascript:;" onclick="about()" id="open" class="mdui-typo-subheading useless ">关于</a>
 
 				<div class="mdui-toolbar-spacer"></div>
 <div class="mdui-typo-body-2 useless useless-no">制作：王翊轩&SUDA</div>
