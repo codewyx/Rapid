@@ -36,6 +36,46 @@
     height:0;
   }
 }
+			/* From cssbuttons.io by @gagan-gv */
+.card {
+ width: 450px;
+ height: 350px;
+ background: #ffffff;
+  font-color: #000000;
+ border-radius: 10px;
+ text-align: center;
+ transition: all 0.5s;
+}
+
+
+.card>.blob {
+ height: 10px;
+ width: 75%;
+ border-radius: 0 0 30px 30px;
+ margin: 0 auto;
+ background-color: #00897B;
+  font-color: #000000;
+ visibility: visible;
+ transition: all 0.3s;
+}
+.white {
+color: #FFFFFF
+			}
+
+.card>.img {
+ display: flex;
+ margin: 30px auto 10px auto;
+ width: 90px;
+ height: 90px;
+ background-color: #00897B;
+ border-radius: 27px;
+ font-size: 40px;
+ font-color: #000000;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.5s;
+}
+
 </style>
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		    <script src="https://www.layuicdn.com/layui/layui.js"></script>
@@ -86,7 +126,7 @@ templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从�
 	<input type="file" id="files" style="display: none" onchange="openFile()" accept=".rapid">			   
 	<a href="javascript:;" onclick="openWindow()" class="mdui-typo-subheading useless">调试</a>
 			  <a href="https://www.yuque.com/codewyx/rapid/trwpoe" class="mdui-typo-subheading useless">文档</a>
-				<a href="javascript:;" onclick="showabout()" class="mdui-typo-subheading useless">关于</a>
+				<a href="javascript:;" mdui-dialog="{target: '#exampleNoTitle'} class="mdui-typo-subheading useless">关于</a>
 
 				<div class="mdui-toolbar-spacer"></div>
 <div class="mdui-typo-body-2 useless useless-no">模板：白篮 合作：Albert钟 制作：王翊轩&SUDA</div>
@@ -196,7 +236,23 @@ templet: '<li><div class="layui-menu-body-title" onclick="nosaveblockly()">从�
 				</category>
 			</xml>
 		</div>	
-							       			<script src="load.js"></script>
+				 <div class="mdui-dialog" id="exampleNoTitle">
+   <div class="card">
+<div class="blob"></div>
+  <span class="img white"><img src="https://rapideditor.vercel.app/editor/icon2.png" width="90"></span>
+  <h3 ><strong>抛弃繁琐的代码，轻松制作你的网站！</strong></h3>
+  <br>
+    <h4>模板：白篮 合作：Albert钟 制作：王翊轩&SUDA</h4>
+      <br>
+      <h4><span>Version 0.2.1</span></h4>
+  <p>
+  </div>
+
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+      </div>
+    </div>
+  </div>			       			<script src="load.js"></script>
 <script src="load2.js"></script>
    <!--  <script src="https://cdn.bootcss.com/Darkmode.js/1.4.0/darkmode-js.js"></script><script>  new Darkmode({ label: '🌗',right: '0px', bottom: 'calc(92vh - 10px)', left:'calc(170vh - 10px)'}).showWidget();</script>-->
 
