@@ -91,3 +91,19 @@ Blockly.PHP['div'] = function(block) {
     }
   return code;
 };
+Blockly.PHP['div'] = function(block) {
+  var statements_span00 = Blockly.PHP.statementToCode(block, 'span00');
+  var text_span01 = block.getFieldValue('span01');
+  var text_span02 = block.getFieldValue('span02');
+    // TODO: Assemble PHP into code variable.
+        if (text_span01 == ''&&text_span02 == '') {
+        var code = '<span>\n'+statements_span00+'\n</span>\n';
+    }  else if (text_span02 == '') {
+       var code = '<span class='+text_span01+'>\n'+statements_span00+'\n</span>\n';
+    }else if (text_span01 == '') {
+       var code = '<span id='+text_span02+'>\n'+statements_span00+'\n</span>\n';
+    }else{
+     var code = '<span id='+text_span02+' class='+text_span01+'>\n'+statements_span00+'\n</span>\n';
+    }
+  return code;
+};
