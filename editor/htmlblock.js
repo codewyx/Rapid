@@ -13,6 +13,12 @@ if(getQueryString("lan")=="en"){
   blan['top002'] = "The top priority of a web page";
   blan['texto001'] = "text";
   blan['texto002'] = "Text, essential";
+  blan['link001'] = "Connect external resources";
+  blan['link002'] = "website:";
+  blan['link003'] = "Connection relationship:";
+  blan['link004'] = "Type:";
+  blan['link005'] = "Remarks (not required):";
+  blan['link006'] = "This tag serves as the default link for all link tags in HTML";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -26,6 +32,12 @@ if(getQueryString("lan")=="en"){
   blan['top002'] = "一个网页的重中之重";
   blan['texto001'] = "文本";
   blan['texto002'] = "文本，必不可少";
+  blan['link001'] = "连接外部资源";
+  blan['link002'] = "网址：";
+  blan['link003'] = "连接关系：";
+  blan['link004'] = "类型：";
+  blan['link005'] = "备注(没有可不填)：";
+  blan['link006'] = "该标签作为HTML中所有的链接标签的默认链接";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -120,23 +132,23 @@ Blockly.Blocks['texto'] = {
 Blockly.Blocks['link'] = {
   init: function() {
         this.appendDummyInput()
-        .appendField("连接外部资源");
+        .appendField(blan['link001']);
     this.appendDummyInput()
-        .appendField("网址：")
+        .appendField(blan['link002'])
         .appendField(new Blockly.FieldTextInput("https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"), "link01");
     this.appendDummyInput()
-        .appendField("连接关系：")
+        .appendField(blan['link003'])
         .appendField(new Blockly.FieldTextInput("stylesheet"), "link02");
     this.appendDummyInput()
-        .appendField("类型：")
+        .appendField(blan['link004'])
         .appendField(new Blockly.FieldTextInput("text/css"), "link03");
         this.appendDummyInput()
-            .appendField("备注(没有可不填)：")
+            .appendField(blan['link005'])
             .appendField(new Blockly.FieldTextInput("text/css"), "link04");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("该标签作为HTML中所有的链接标签的默认链接");
+ this.setTooltip(blan['link006']);
  this.setHelpUrl("");
   }
 };
