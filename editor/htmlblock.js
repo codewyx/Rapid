@@ -1,15 +1,17 @@
 
 function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");var r = window.location.search.substr(1).match(reg);if (r != null) return unescape(r[2]); return null;} 
-  if(getQueryString("lan")=="en"){
-    var lan = new Array("title01":"Define title")
-  }else{
-    var lan = new Array("title01":"定义标题")
-  }
+if(getQueryString("lan")=="en"){
+  var blan = new Array();
+  blan['title01'] = 'Define title';
+}else{
+  var lan = new Array();
+  blan['title01'] = '定义标题';
+};
 Blockly.Blocks['title'] = {
   init: function() {
     this.appendValueInput("title01")
         .setCheck(null)
-        .appendField(lan[title01]);
+        .appendField(blan['title01']);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
