@@ -1,11 +1,10 @@
-# Rapid
+# Rapid预览版
 
 #### 介绍
-在Block中设计网页
+使用拼接积木制作属于你的网页
 
 #### 程序架构
 纯Html+Js
-
 
 #### 使用说明
 
@@ -14,4 +13,8 @@
 
 #### 文档
 
-1.  进入语雀知识库[https://www.yuque.com/codewyx/rapid]
+进入语雀知识库[https://www.yuque.com/codewyx/rapid]
+
+#### Preview 说明
+
+此分支为预览版分支，可以提前使用最新版的Rapid
