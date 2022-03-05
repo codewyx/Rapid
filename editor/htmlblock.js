@@ -19,6 +19,10 @@ if(getQueryString("lan")=="en"){
   blan['link004'] = "Type:";
   blan['link005'] = "Remarks (not required):";
   blan['link006'] = "This tag serves as the default link for all link tags in HTML";
+  blan['head1001'] = "Insert title text";
+  blan['head1002'] = "Size: (1-6)";
+  blan['head1003'] = "Text content:";
+  blan['head1004'] = "Heading is defined by < H1 > - < H6 > tags< H1 > defines the largest title< H6 > defines the smallest title.";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -38,6 +42,10 @@ if(getQueryString("lan")=="en"){
   blan['link004'] = "类型：";
   blan['link005'] = "备注(没有可不填)：";
   blan['link006'] = "该标签作为HTML中所有的链接标签的默认链接";
+  blan['head1001'] = "插入标题文字";
+  blan['head1002'] = "大小：（1-6）";
+  blan['head1003'] = "文字内容：";
+  blan['head1004'] = "标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。";
 };
 Blockly.Blocks['title'] = {
   init: function() {
