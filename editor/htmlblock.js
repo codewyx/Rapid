@@ -167,14 +167,33 @@ Blockly.Blocks['br'] = {
 Blockly.Blocks['div'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("插入分区");
+            .appendField("插入分区(div排版)");
         this.appendDummyInput()
         .appendField("CSS类（可不填）：")
-        .appendField(new Blockly.FieldTextInput('"style1"'), "div01");
+        .appendField(new Blockly.FieldTextInput('""'), "div01");
          this.appendDummyInput()
         .appendField("JS id（可不填）：")
-        .appendField(new Blockly.FieldTextInput('"1"'), "div02");
+        .appendField(new Blockly.FieldTextInput('""'), "div02");
         this.appendStatementInput("div00")
+            .setCheck(null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(0);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+Blockly.Blocks['span'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField("插入不占单独行分区(span排版)");
+        this.appendDummyInput()
+        .appendField("CSS类（可不填）：")
+        .appendField(new Blockly.FieldTextInput('""'), "span01");
+         this.appendDummyInput()
+        .appendField("JS id（可不填）：")
+        .appendField(new Blockly.FieldTextInput('""'), "span02");
+        this.appendStatementInput("span00")
             .setCheck(null);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
