@@ -139,7 +139,7 @@
     <body>
       <script> 
 function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");var r = window.location.search.substr(1).match(reg);if (r != null) return unescape(r[2]); return null;} 
-          if(GetQueryString("lan")=="en"){
+          if(getQueryString("lan")=="en"){
               document.writeln("  <div class=\"card\">");
 document.writeln("            <div class=\"neirong\">");
 document.writeln("                <a href=\"/editor/\"><img src=\"/editor/logoin.png\" width=\"220\"></a>");
