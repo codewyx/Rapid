@@ -106,7 +106,7 @@ Blockly.Blocks['texto'] = {
   init: function() {
         this.appendDummyInput()
             .appendField(" ")
-            .appendField(new Blockly.FieldTextInput("texto01"), blan['texto001'])
+            .appendField(new Blockly.FieldTextInput(blan['texto001']), "texto01")
             .appendField(" ");
     this.setOutput(true, null);
     this.setColour(15);
