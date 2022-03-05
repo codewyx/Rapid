@@ -3,9 +3,11 @@ function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&
 if(getQueryString("lan")=="en"){
   var blan = new Array();
   blan['title001'] = "Define title";
+  blan['title002'] = "Set the title of the page";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
+  blan['title002'] = "设置网页的标题";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -15,7 +17,7 @@ Blockly.Blocks['title'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("设置网页的标题");
+ this.setTooltip(blan['title002']);
  this.setHelpUrl("");
   }
 };
