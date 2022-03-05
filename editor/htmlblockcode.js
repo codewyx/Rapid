@@ -91,7 +91,7 @@ Blockly.PHP['div'] = function(block) {
     }
   return code;
 };
-Blockly.PHP['div'] = function(block) {
+Blockly.PHP['span'] = function(block) {
   var statements_span00 = Blockly.PHP.statementToCode(block, 'span00');
   var text_span01 = block.getFieldValue('span01');
   var text_span02 = block.getFieldValue('span02');
