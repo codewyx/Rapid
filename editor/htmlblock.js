@@ -6,12 +6,18 @@ if(getQueryString("lan")=="en"){
   blan['title002'] = "Set the title of the page";
   blan['html_dingyi001'] = "Define HTML";
   blan['head001'] = "Define header";
+  blan['html_code001'] = "HTML tags";
+  blan['html_code002'] = "<p>Hello!<p>";
+  blan['body001'] = "Define body";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
   blan['title002'] = "设置网页的标题";
   blan['html_dingyi001'] = "定义HTML内容";
   blan['head001'] = "定义头部";
+  blan['html_code001'] = "HTML标签";
+  blan['html_code002'] = "<p>你好！<p>";
+  blan['body001'] = "定义身体";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -55,8 +61,8 @@ Blockly.Blocks['head'] = {
 Blockly.Blocks['html_code'] = {
   init: function() {
         this.appendDummyInput()
-        .appendField("HTML标签")
-        .appendField(new Blockly.FieldTextInput("<p>你好</p>"), "code");
+        .appendField(blan['html_code001'])
+        .appendField(new Blockly.FieldTextInput(blan['html_code002']), "code");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(285);
@@ -67,7 +73,7 @@ Blockly.Blocks['html_code'] = {
 Blockly.Blocks['body'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("定义身体");
+            .appendField(blan['body001']);
         this.appendStatementInput("body01")
             .setCheck(null);
         this.setPreviousStatement(true, null);
