@@ -170,10 +170,10 @@ Blockly.Blocks['div'] = {
             .appendField("插入分区");
         this.appendDummyInput()
         .appendField("CSS类（可不填）：")
-        .appendField(new Blockly.FieldTextInput("style1"), "div01");
+        .appendField(new Blockly.FieldTextInput('"style1"'), "div01");
          this.appendDummyInput()
         .appendField("JS id（可不填）：")
-        .appendField(new Blockly.FieldTextInput("1"), "div02");
+        .appendField(new Blockly.FieldTextInput('"1"'), "div02");
         this.appendStatementInput("div00")
             .setCheck(null);
         this.setPreviousStatement(true, null);
