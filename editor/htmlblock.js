@@ -23,6 +23,8 @@ if(getQueryString("lan")=="en"){
   blan['head1002'] = "Size: (1-6)";
   blan['head1003'] = "Text content:";
   blan['head1004'] = "Heading is defined by < H1 > - < H6 > tags< H1 > defines the largest title< H6 > defines the smallest title.";
+  blan['p001'] = "Insert paragraph";
+  blan['p002'] = "A small paragraph";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -163,17 +165,17 @@ Blockly.Blocks['link'] = {
 Blockly.Blocks['head1'] = {
   init: function() {
         this.appendDummyInput()
-        .appendField("插入标题文字");
+        .appendField(blan['head1001']);
     this.appendDummyInput()
-        .appendField("大小：（1-6）")
+        .appendField(blan['head1002'])
         .appendField(new Blockly.FieldTextInput("1"), "head00");
     this.appendDummyInput()
-        .appendField("文字内容：")
+        .appendField(blan['head1003'])
         .appendField(new Blockly.FieldTextInput("stylesheet"), "head02");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。");
+ this.setTooltip(blan['head1004']);
  this.setHelpUrl("");
   }
 };
@@ -181,11 +183,11 @@ Blockly.Blocks['p'] = {
   init: function() {
     this.appendValueInput("p01")
         .setCheck(null)
-        .appendField("插入段落");
+        .appendField(blan['p001']);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("一个小小的段落");
+ this.setTooltip(blan['p002']);
  this.setHelpUrl("");
   }
 };
