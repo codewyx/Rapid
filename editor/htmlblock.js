@@ -5,13 +5,13 @@ if(getQueryString("lan")=="en"){
   blan['title001'] = "Define title";
   blan['title002'] = "Set the title of the page";
   blan['html_dingyi001'] = "Define HTML";
-  blan['head'] = "Define header";
+  blan['head001'] = "Define header";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
   blan['title002'] = "设置网页的标题";
   blan['html_dingyi001'] = "定义HTML内容";
-  blan['head'] = "定义头部";
+  blan['head001'] = "定义头部";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -42,7 +42,7 @@ Blockly.Blocks['html_dingyi'] = {
 Blockly.Blocks['head'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("定义头部");
+            .appendField(blan['head001']);
         this.appendStatementInput("head01")
             .setCheck(null);
         this.setPreviousStatement(true, null);
