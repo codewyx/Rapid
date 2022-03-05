@@ -9,6 +9,10 @@ if(getQueryString("lan")=="en"){
   blan['html_code001'] = "HTML tags";
   blan['html_code002'] = "<p>Hello!<p>";
   blan['body001'] = "Define body";
+  blan['top001'] = "Define web page";
+  blan['top002'] = "The top priority of a web page";
+  blan['texto001'] = "text";
+  blan['texto002'] = "Text, essential";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -18,6 +22,10 @@ if(getQueryString("lan")=="en"){
   blan['html_code001'] = "HTML标签";
   blan['html_code002'] = "<p>你好！<p>";
   blan['body001'] = "定义身体";
+  blan['top001'] = "定义网页";
+  blan['top002'] = "一个网页的重中之重";
+  blan['texto001'] = "文本";
+  blan['texto002'] = "文本，必不可少";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -86,10 +94,10 @@ Blockly.Blocks['body'] = {
 Blockly.Blocks['top'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("定义网页");
+            .appendField(blan['top001']);
     this.setNextStatement(true, null);
     this.setColour(230);
- this.setTooltip("一个网页的重中之重");
+ this.setTooltip(blan['top002']);
  this.setHelpUrl("");
   }
 };
@@ -98,11 +106,11 @@ Blockly.Blocks['texto'] = {
   init: function() {
         this.appendDummyInput()
             .appendField(" ")
-            .appendField(new Blockly.FieldTextInput("文本"), "texto01")
+            .appendField(new Blockly.FieldTextInput(blan['texto001']), "texto01")
             .appendField(" ");
     this.setOutput(true, null);
     this.setColour(15);
- this.setTooltip("文本，必不可少");
+ this.setTooltip(blan['texto002']);
  this.setHelpUrl("");
   }
 };
