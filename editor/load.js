@@ -8,7 +8,15 @@ $('#open').on('click', function () {
   inst.open();
 });
 
-var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
+'use strict';
+
+let workspace = null;
+
+function start() {
+	  workspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
+}
+
+
 		function showHtml() {
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
