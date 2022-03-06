@@ -28,6 +28,9 @@
   height: initial;
 }
 .blocklyTreeIcon{
-    content: "\A";
 background:url(logo_only.svg);
+}
+.blocklyTreeIcon{
+  content: "\A";  
+  white-space: pre;  
 }
