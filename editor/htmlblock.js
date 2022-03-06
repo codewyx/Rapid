@@ -25,6 +25,13 @@ if(getQueryString("lan")=="en"){
   blan['head1004'] = "Heading is defined by < H1 > - < H6 > tags< H1 > defines the largest title< H6 > defines the smallest title.";
   blan['p001'] = "Insert paragraph";
   blan['p002'] = "A small paragraph";
+    blan['div001'] = "Insert partition (div typography)";
+      blan['span001'] = "Inserting partitions that do not occupy separate rows (span typography)";
+  blan['divspan1'] = "CSS class (optional):";
+    blan['divspan2'] = "JS id (optional):";
+    blan['hr'] = "Insert a horizontal line";
+    blan['br'] = "Insert a line break";
+
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -47,7 +54,13 @@ if(getQueryString("lan")=="en"){
   blan['head1001'] = "插入标题文字";
   blan['head1002'] = "大小：（1-6）";
   blan['head1003'] = "文字内容：";
-  blan['head1004'] = "标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。";
+  blan['head1004'] = "标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。";、
+      blan['div001'] = "插入分区(div排版)";
+      blan['span001'] = "插入不占单独行分区(span排版)";
+  blan['divspan1'] = "CSS类（可不填）：";
+    blan['divspan2'] = "JS id（可不填）：";
+      blan['hr'] = "插入水平线";
+    blan['br'] = "插入换行符";
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -194,34 +207,34 @@ Blockly.Blocks['p'] = {
 Blockly.Blocks['hr'] = {
   init: function() {
      this.appendDummyInput()
-        .appendField("插入水平线");
+        .appendField(blan['hr']);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("一个小小的水平线");
+ this.setTooltip(blan['hr']);
  this.setHelpUrl("");
   }
 };
 Blockly.Blocks['br'] = {
   init: function() {
      this.appendDummyInput()
-        .appendField("插入换行符");
+        .appendField(blan['br']);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
- this.setTooltip("一个小小的换行符");
+ this.setTooltip(blan['br']);
  this.setHelpUrl("");
   }
 };
 Blockly.Blocks['div'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("插入分区(div排版)");
+            .appendField(blan['div001']);
         this.appendDummyInput()
-        .appendField("CSS类（可不填）：")
+        .appendField(blan['divspan1'])
         .appendField(new Blockly.FieldTextInput('""'), "div01");
          this.appendDummyInput()
-        .appendField("JS id（可不填）：")
+        .appendField(blan['divspan2'])
         .appendField(new Blockly.FieldTextInput('""'), "div02");
         this.appendStatementInput("div00")
             .setCheck(null);
@@ -235,12 +248,12 @@ Blockly.Blocks['div'] = {
 Blockly.Blocks['span'] = {
     init: function () {
         this.appendDummyInput()
-            .appendField("插入不占单独行分区(span排版)");
+            .appendField(blan['span001']);
         this.appendDummyInput()
-        .appendField("CSS类（可不填）：")
+        .appendField(blan['divspan1'])
         .appendField(new Blockly.FieldTextInput('""'), "span01");
          this.appendDummyInput()
-        .appendField("JS id（可不填）：")
+        .appendField(blan['divspan2'])
         .appendField(new Blockly.FieldTextInput('""'), "span02");
         this.appendStatementInput("span00")
             .setCheck(null);
