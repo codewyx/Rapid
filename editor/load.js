@@ -24,10 +24,10 @@ class CustomCategory extends Blockly.ToolboxCategory {
 Blockly.registry.register(
     Blockly.registry.Type.TOOLBOX_ITEM,
     Blockly.ToolboxCategory.registrationName,
-    CustomCategory, true);
+    CustomCategory
     addColourBorder_(colour){
         this.rowDiv_.style.backgroundColor = colour;
-    }
+    }, true);
 		function showHtml() {
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
