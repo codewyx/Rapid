@@ -10,10 +10,10 @@ $('#open').on('click', function () {
 
 'use strict';
 
+function start() {}
 
-function start() {
+
 	  var demoworkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
-}
 
 
 		function showHtml() {
