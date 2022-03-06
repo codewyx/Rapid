@@ -1,3 +1,4 @@
+var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'));
 // 1. 为了创建自定义类别，先创建自定义类别，继承自Blockly.ToolboxCategory
 class CustomCategory extends Blockly.ToolboxCategory {
     // 自定义类别创造函数
