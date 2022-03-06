@@ -25,7 +25,9 @@ Blockly.registry.register(
     Blockly.registry.Type.TOOLBOX_ITEM,
     Blockly.ToolboxCategory.registrationName,
     CustomCategory, true);
-
+    addColourBorder_(colour){
+        this.rowDiv_.style.backgroundColor = colour;
+    }
 		function showHtml() {
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
