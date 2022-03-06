@@ -55,6 +55,8 @@ if(getQueryString("lan")=="en"){
   blan['head1002'] = "大小：（1-6）";
   blan['head1003'] = "文字内容：";
   blan['head1004'] = "标题（Heading）是通过 <h1> - <h6> 标签进行定义的。<h1> 定义最大的标题。 <h6> 定义最小的标题。";
+    blan['p001'] = "插入段落";
+  blan['p002'] = "一个小小的段落";
       blan['div001'] = "插入分区(div排版)";
       blan['span001'] = "插入不占单独行分区(span排版)";
   blan['divspan1'] = "CSS类（可不填）：";
