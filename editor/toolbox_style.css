@@ -29,8 +29,5 @@
 }
 .blocklyTreeIcon{
 background:url(logo_only.svg);
-}
-.blocklyTreeIcon{
-  content: "\A";  
-  white-space: pre;  
+    content: "\A";  
 }
