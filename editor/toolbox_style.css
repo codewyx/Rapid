@@ -1,6 +1,6 @@
 /* Makes our label white. */
 .blocklyTreeLabel {
-  color: white;
+  color: black;
 }
 /* Adds padding around the group of categories and separators. */
 .blocklyToolboxContents {
@@ -14,7 +14,7 @@
 }
 /* Changes color of the icon to white. */
 .customIcon {
-  color: white;
+  color:  black;
 }
 /* Stacks the icon on top of the label. */
 .blocklyTreeRowContentContainer {
