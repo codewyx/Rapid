@@ -195,6 +195,7 @@ window.onbeforeunload = function(event){
 };
 }
 	else{
+		function Base64() {
     // private property  
     _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";  
 
