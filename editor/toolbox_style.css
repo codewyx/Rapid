@@ -8,9 +8,11 @@
 }
 /* Adds space between the categories, rounds the corners and adds space around the label. */
 .blocklyTreeRow {
-  padding: 3px;
-  margin-bottom: .5em;
-  border-radius: 4px;
+    height: 20px;
+    line-height: 30px;
+    margin-bottom: 3px;
+    padding-right: 30px;
+    white-space: nowrap;
 }
 /* Changes color of the icon to white. */
 .customIcon {
