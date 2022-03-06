@@ -25,3 +25,6 @@
 .blocklyTreeRow {
   height: initial;
 }
+.blocklyTreeIcon{
+background:url(logo_only.svg);
+}
