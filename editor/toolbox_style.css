@@ -12,7 +12,10 @@
    line-height: 60px;
    padding: 3px;
   margin-bottom: .5em;
-  border-radius: 15px;
+  border-radius: 2px;
+}
+.blocklyTreeRow:hover{
+  height:50px;
 }
 /* Changes color of the icon to white. */
 .customIcon {
