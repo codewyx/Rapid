@@ -8,7 +8,7 @@
 }
 /* Adds space between the categories, rounds the corners and adds space around the label. */
 .blocklyTreeRow {
-   height: 30px !important;
+   height: 30px;
    line-height: 30px;
    padding: 3px;
   margin-bottom: .5em;
