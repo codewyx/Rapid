@@ -260,8 +260,8 @@ function myTimer() {
             document.getElementById("001").innerHTML = codes
 }
     layer.open({
-  title: '代码转换'
-  ,content: '<h3>预览<h3><div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001"></div></div></div></div>'
+  title: '预览'
+  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;"></div></div></div></div>'
 ,shade: 0
 ,area: ['400px','700px']
 ,type: 1
