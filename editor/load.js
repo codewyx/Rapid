@@ -256,12 +256,12 @@ var myVar = setInterval(function(){ myTimer() }, 1000);
 function myTimer() {
       Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
-            var codes=html2Escape(code)
+            var codes=code //html2Escape()
             document.getElementById("001").innerHTML = codes
 }
     layer.open({
   title: '代码转换'
-  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div>' + codes + '</div></div></div>'
+  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><h3>预览<h3><div id="001"></div></div></div></div>'
 ,shade: 0
 ,area: ['400px','700px']
 ,type: 1
@@ -269,9 +269,6 @@ function myTimer() {
 ,offset: 'r'
 ,resize:true
 });   
-layui.code({
-          title: 'HTML'
-});
   
     }
 window.onbeforeunload = function(event){
