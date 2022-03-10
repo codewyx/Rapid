@@ -260,8 +260,8 @@ function myTimer() {
             document.getElementById("001").innerHTML = codes
 }
     layer.open({
-  title: '预览'
-  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;font-family:auto !important;margin:auto !important"></div></div></div></div>'
+  title: '预览(由于第三方CSS原因，显示效果可能与实际不同)'
+  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;"></div></div></div></div>'
 ,shade: 0
 ,area: ['400px','700px']
 ,type: 1
@@ -273,10 +273,10 @@ function myTimer() {
     }
 window.onbeforeunload = function(event){
 	    mdui.snackbar({
-      message: "Rapid ：你保存了吗？真的要关闭吗？",
-      position: "right-top"
+      message: "Rapid ：注意！您还没有保存！",
+      position: "top"
     });
-	return '???快保存！'; 
+	return '请尽快保存！'; 
 };
 
 
