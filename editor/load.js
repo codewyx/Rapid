@@ -261,7 +261,7 @@ function myTimer() {
 }
     layer.open({
   title: '代码转换'
-  ,content: '<div class="mdui-card"><div class="mdui-card-media"><h3>预览<h3><div class="mdui-card-actions"><div id="001"></div></div></div></div>'
+  ,content: '<div class="mdui-card"><h3>预览<h3><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001"></div></div></div></div>'
 ,shade: 0
 ,area: ['400px','700px']
 ,type: 1
