@@ -259,6 +259,17 @@ function myTimer() {
             var codes=html2Escape(code)
             document.getElementById("001").innerHTML = codes
 }
+	    layer.open({
+  title: 'Preview (due to third-party CSS, the display effect may be different from the actual)'
+  ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;resize:both"></div></div></div></div>'
+,shade: 0
+,area: ['500px','700px']
+,type: 1
+,anim: 5
+,offset: 'r'
+,resize:true
+});   
+	/*
     layer.open({
   title: 'Transcoding'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><pre class="layui-code"><div id="001"></div></pre></div></div></div>'
@@ -269,6 +280,7 @@ function myTimer() {
 ,offset: 'r'
 ,resize:true
 });   
+*/
 layui.code({
           title: 'HTML'
 });
