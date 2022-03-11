@@ -260,10 +260,10 @@ function myTimer() {
             document.getElementById("001").innerHTML = codes
 }
     layer.open({
-  title: '预览(由于第三方CSS原因，显示效果可能与实际不同)'
+  title: '预览(由于第三方CSS，显示效果可能与实际不同)'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;resize:both"></div></div></div></div>'
 ,shade: 0
-,area: ['400px','700px']
+,area: ['500px','700px']
 ,type: 1
 ,anim: 5
 ,offset: 'r'
