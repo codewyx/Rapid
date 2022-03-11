@@ -7823,7 +7823,7 @@ Blockly.Comment.prototype.dispose = function() {
     this.block_.comment = null;
     Blockly.Icon.prototype.dispose.call(this)
 };
-Blockly.Css.register(".blocklyCommentTextarea {,background-color: #fef49c;,border: 0;,outline: 0;,margin: 0;,padding: 3px;,resize: none;,display: block;,overflow: hidden;,}".split(","));
+Blockly.Css.register(".blocklyCommentTextarea {,background-color: #f8f8f8;,border: 0;,outline: 0;,margin: 0;,padding: 3px;,resize: none;,display: block;,overflow: hidden;overflow:auto;,}".split(","));
 Blockly.FlyoutCursor = function() { Blockly.FlyoutCursor.superClass_.constructor.call(this) };
 Blockly.utils.object.inherits(Blockly.FlyoutCursor, Blockly.Cursor);
 Blockly.FlyoutCursor.prototype.onBlocklyAction = function(a) {
