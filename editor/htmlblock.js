@@ -26,14 +26,17 @@ if(getQueryString("lan")=="en"){
   blan['p001'] = "Insert paragraph";
   blan['p002'] = "A small paragraph";
     blan['div001'] = "Insert partition (div typography)";
-      blan['span001'] = "Inserting partitions that do not occupy separate rows (span typography)";
+      blan['span001'] = "Inserting partition(not occupy separate rows)";
   blan['divspan1'] = "CSS class (optional):";
     blan['divspan2'] = "JS id (optional):";
     blan['hr'] = "Insert a horizontal line";
     blan['br'] = "Insert a line break";
   blan['link001'] = "Insert link";
   blan['link002'] = "text";
-
+   blan['iframe'] = "Embedded web page";
+        blan['iframe1'] = "link";
+        blan['iframe2'] = "wdth";
+        blan['iframe3'] = "heigh";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -67,6 +70,11 @@ if(getQueryString("lan")=="en"){
     blan['br'] = "插入换行符";
   blan['link001'] = "插入链接";
     blan['link002'] = "文本";
+      blan['iframe'] = "嵌入网页";
+        blan['iframe1'] = "链接";
+        blan['iframe2'] = "宽";
+        blan['iframe3'] = "高";
+  
 };
 Blockly.Blocks['title'] = {
   init: function() {
@@ -282,4 +290,26 @@ Blockly.Blocks['link'] = {
  this.setTooltip("");
  this.setHelpUrl("");
   }
+};
+Blockly.Blocks['iframe'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(blan['iframe']);
+        this.appendDummyInput()
+        .appendField(blan['iframe1'])
+        .appendField(new Blockly.FieldTextInput('""'), "https://rapideditor.vercel.app/");
+         this.appendDummyInput()
+        .appendField(blan['iframe2'])
+        .appendField(new Blockly.FieldTextInput('""'), "100");
+        this.appendStatementInput()
+         .appendField(blan['iframe3'])
+        .appendField(new Blockly.FieldTextInput('""'), "100");
+        this.appendStatementInput()
+            .setCheck(null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(0);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
 };
