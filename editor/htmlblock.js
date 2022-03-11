@@ -31,8 +31,8 @@ if(getQueryString("lan")=="en"){
     blan['divspan2'] = "JS id (optional):";
     blan['hr'] = "Insert a horizontal line";
     blan['br'] = "Insert a line break";
-  blan['link001'] = "Insert link";
-  blan['link002'] = "text";
+  blan['1link001'] = "Insert link";
+  blan['1link002'] = "text";
    blan['iframe'] = "Embedded web page";
         blan['iframe1'] = "link";
         blan['iframe2'] = "wdth";
@@ -68,8 +68,8 @@ if(getQueryString("lan")=="en"){
     blan['divspan2'] = "JS id（可不填）：";
       blan['hr'] = "插入水平线";
     blan['br'] = "插入换行符";
-  blan['link001'] = "插入链接";
-    blan['link002'] = "文本";
+  blan['1link001'] = "插入链接";
+    blan['1link002'] = "文本";
       blan['iframe'] = "嵌入网页";
         blan['iframe1'] = "链接";
         blan['iframe2'] = "宽";
@@ -279,16 +279,18 @@ Blockly.Blocks['span'] = {
     }
 };
 
-Blockly.Blocks['link'] = {
+Blockly.Blocks['1link'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField(blan['link001'])
+        .appendField(blan['1link001'])
         .appendField(new Blockly.FieldTextInput("https://rapideditor.vercel.app/"), "link01")
-        .appendField(blan['link002'])
+        .appendField(blan['1link002'])
         .appendField(new Blockly.FieldTextInput("Rapid网站"), "link02");
     this.setColour(0);
  this.setTooltip("");
  this.setHelpUrl("");
+          this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
   }
 };
 Blockly.Blocks['iframe'] = {
