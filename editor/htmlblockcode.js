@@ -107,3 +107,8 @@ Blockly.PHP['span'] = function(block) {
     }
   return code;
 };
+Blockly.PHP['p'] = function(block) {
+  // TODO: Assemble PHP into code variable.
+  var code = '<a href="' + block.getFieldValue('link01') + '">' + block.getFieldValue('link02') + "</a>";
+  return code;
+};
