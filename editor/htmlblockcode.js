@@ -37,6 +37,23 @@ Blockly.PHP['texto'] = function(block) {
   // TODO: Change ORDER_NONE to the correct strength.
   return code;
 };
+Blockly.PHP['zs'] = function(block) {
+
+  var zs = block.getFieldValue('zs');
+
+  return '<!--'+code + '-->\n';
+};
+Blockly.PHP['iframe'] = function(block) {
+
+  var text_iframe01 = block.getFieldValue('iframe001');
+
+  var text_iframe02 = block.getFieldValue('iframe002');
+
+  var text_iframe03 = block.getFieldValue('iframe003');
+    // TODO: Assemble PHP into code variable.
+      var code = '<iframe height="'+text_iframe01+'" width="'+text_iframe02+'" style="border: none;" src="'+text_iframe03+'"></iframe>\n';
+  return code;
+};
 Blockly.PHP['link'] = function(block) {
   var text_link01 = block.getFieldValue('link01');
   var text_link02 = block.getFieldValue('link02');
