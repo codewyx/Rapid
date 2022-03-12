@@ -252,9 +252,7 @@ function myFunction() {
  });
 }
 function openWindow() {
-		if(yn==1){
-		}else{
-	var yn = 1
+
 var myVar = setInterval(function(){ myTimer() }, 1000);
 function myTimer() {
       Blockly.PHP.INFINITE_LOOP_TRAP = true;
@@ -272,7 +270,7 @@ function myTimer() {
 ,offset: 'r'
 ,resize:true
 });   
-	}
+	
     }
 window.onbeforeunload = function(event){
 	    mdui.snackbar({
