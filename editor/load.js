@@ -252,6 +252,8 @@ function myFunction() {
  });
 }
 function openWindow() {
+		if(yn!=1){
+	var yn = 1
 var myVar = setInterval(function(){ myTimer() }, 1000);
 function myTimer() {
       Blockly.PHP.INFINITE_LOOP_TRAP = true;
@@ -259,8 +261,6 @@ function myTimer() {
             var codes=code //html2Escape()
             document.getElementById("001").innerHTML = codes
 }
-	if(yn!=1){
-	var yn = 1
     layer.open({
   title: '预览(由于第三方CSS，显示效果可能与实际不同)'
   ,content: '<div class="mdui-card"><div class="mdui-card-media"><div class="mdui-card-actions"><div id="001" style="overflow:auto;height:100%;resize:both"></div></div></div></div>'
