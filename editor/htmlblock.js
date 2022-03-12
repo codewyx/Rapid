@@ -191,13 +191,13 @@ Blockly.Blocks['iframe'] = {
         .appendField(blan['iframe001']);
     this.appendDummyInput()
         .appendField(blan['iframe002'])
-        .appendField(new Blockly.FieldTextInput("https://qq.com/"), "link01");
+        .appendField(new Blockly.FieldTextInput("https://qq.com/"), "iframe01");
     this.appendDummyInput()
         .appendField(blan['iframe003'])
-        .appendField(new Blockly.FieldTextInput("200"), "link02");
+        .appendField(new Blockly.FieldTextInput("200"), "iframe02");
     this.appendDummyInput()
         .appendField(blan['iframe004'])
-        .appendField(new Blockly.FieldTextInput("200"), "link03");
+        .appendField(new Blockly.FieldTextInput("200"), "iframe03");
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(0);
