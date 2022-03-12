@@ -77,10 +77,10 @@ if(getQueryString("lan")=="en"){
     blan['br'] = "插入换行符";
   blan['1link001'] = "插入链接";
     blan['1link002'] = "文本";
-      blan['iframe'] = "嵌入网页";
-        blan['iframe1'] = "链接";
-        blan['iframe2'] = "宽";
-        blan['iframe3'] = "高";
+    //  blan['iframe'] = "嵌入网页";
+     //   blan['iframe1'] = "链接";
+    //    blan['iframe2'] = "宽";
+     //   blan['iframe3'] = "高";
   
 };
 Blockly.Blocks['title'] = {
@@ -333,25 +333,25 @@ Blockly.Blocks['1link'] = {
         this.setNextStatement(true, null);
   }
 };
-Blockly.Blocks['iframe'] = {
-    init: function () {
-        this.appendDummyInput()
-            .appendField(blan['iframe']);
-        this.appendDummyInput()
-        .appendField(blan['iframe1'])
-        .appendField(new Blockly.FieldTextInput('""'), "https://rapideditor.vercel.app/");
-         this.appendDummyInput()
-        .appendField(blan['iframe2'])
-        .appendField(new Blockly.FieldTextInput('""'), "100");
-        this.appendStatementInput()
-         .appendField(blan['iframe3'])
-        .appendField(new Blockly.FieldTextInput('""'), "100");
-        this.appendStatementInput()
-            .setCheck(null);
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour(0);
-        this.setTooltip("");
-        this.setHelpUrl("");
-    }
-};
+//Blockly.Blocks['iframe'] = {
+ //   init: function () {
+   //     this.appendDummyInput()
+   //         .appendField(blan['iframe']);
+   //     this.appendDummyInput()
+     //   .appendField(blan['iframe1'])
+    //    .appendField(new Blockly.FieldTextInput('""'), "https://rapideditor.vercel.app/");
+    //     this.appendDummyInput()
+     //   .appendField(blan['iframe2'])
+     //   .appendField(new Blockly.FieldTextInput('""'), "100");
+     //   this.appendStatementInput()
+     //    .appendField(blan['iframe3'])
+     //   .appendField(new Blockly.FieldTextInput('""'), "100");
+     //   this.appendStatementInput()
+      //      .setCheck(null);
+      //  this.setPreviousStatement(true, null);
+     //   this.setNextStatement(true, null);
+      //  this.setColour(0);
+     //   this.setTooltip("");
+     //   this.setHelpUrl("");
+   // }
+//};
