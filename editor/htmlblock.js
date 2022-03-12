@@ -50,6 +50,13 @@ if(getQueryString("lan")=="en"){
   blan['top002'] = "一个网页的重中之重";
   blan['texto001'] = "文本";
   blan['texto002'] = "文本，必不可少";
+  blan['zs001'] = "注释";
+  blan['za002'] = "内容：";
+  blan['iframe001'] = "嵌入外部网页";
+  blan['iframe002'] = "网址：";
+  blan['iframe003'] = "高：";
+  blan['iframe004'] = "宽：";
+  blan['iframe005'] = "输入网址";
   blan['link001'] = "连接外部资源";
   blan['link002'] = "网址：";
   blan['link003'] = "连接关系：";
