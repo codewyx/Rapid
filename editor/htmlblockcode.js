@@ -129,8 +129,8 @@ Blockly.PHP['1link'] = function(block) {
   var code = '<a href="' + block.getFieldValue('1link001') + '">' + block.getFieldValue('1link002') + "</a>\n";
   return code;
 };
-Blockly.PHP['iframe'] = function(block) {
+//Blockly.PHP['iframe'] = function(block) {
   // TODO: Assemble PHP into code variable.
-  var code = '<iframe src="' + block.getFieldValue('iframe1') + ' width='+block.getFieldValue('iframe2') +  ' height='+block.getFieldValue('iframe2') +'"></iframe>\n';
-  return code;
-};
+  //var code = '<iframe src="' + block.getFieldValue('iframe1') + ' width='+block.getFieldValue('iframe2') +  ' height='+block.getFieldValue('iframe2') +'"></iframe>\n';
+  //return code;
+//};
