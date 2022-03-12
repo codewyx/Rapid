@@ -252,7 +252,8 @@ function myFunction() {
  });
 }
 function openWindow() {
-		if(yn!=1){
+		if(yn==1){
+		}else{
 	var yn = 1
 var myVar = setInterval(function(){ myTimer() }, 1000);
 function myTimer() {
