@@ -45,11 +45,11 @@ Blockly.PHP['zs'] = function(block) {
 };
 Blockly.PHP['iframe'] = function(block) {
 
-  var text_iframe01 = block.getFieldValue('iframe001');
+  var text_iframe01 = block.getFieldValue('iframe01');
 
-  var text_iframe02 = block.getFieldValue('iframe002');
+  var text_iframe02 = block.getFieldValue('iframe02');
 
-  var text_iframe03 = block.getFieldValue('iframe003');
+  var text_iframe03 = block.getFieldValue('iframe03');
     // TODO: Assemble PHP into code variable.
       var code = '<iframe height="'+text_iframe01+'" width="'+text_iframe02+'" style="border: none;" src="'+text_iframe03+'"></iframe>\n';
   return code;
