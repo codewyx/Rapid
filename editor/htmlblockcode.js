@@ -41,7 +41,7 @@ Blockly.PHP['zs'] = function(block) {
 
   var zs = block.getFieldValue('zs');
 
-  return '<!--'+code + '-->\n';
+  return '<!--'+zs + '-->\n';
 };
 Blockly.PHP['iframe'] = function(block) {
 
