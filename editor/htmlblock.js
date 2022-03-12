@@ -170,8 +170,41 @@ Blockly.Blocks['texto'] = {
  this.setHelpUrl("");
   }
 };
+Blockly.Blocks['zs'] = {
 
+  init: function() {
 
+        this.appendDummyInput()
+        .appendField(blan['zs001'])
+        .appendField(new Blockly.FieldTextInput(blan['zs002']), "zs");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(285);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+Blockly.Blocks['iframe'] = {
+
+  init: function() {
+        this.appendDummyInput()
+        .appendField(blan['iframe001']);
+    this.appendDummyInput()
+        .appendField(blan['iframe002'])
+        .appendField(new Blockly.FieldTextInput("https://qq.com/"), "link01");
+    this.appendDummyInput()
+        .appendField(blan['iframe003'])
+        .appendField(new Blockly.FieldTextInput("200"), "link02");
+    this.appendDummyInput()
+        .appendField(blan['iframe004'])
+        .appendField(new Blockly.FieldTextInput("200"), "link03");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setTooltip(blan['iframe005']);
+ this.setHelpUrl("");
+  }
+};
 
 Blockly.Blocks['link'] = {
   init: function() {
