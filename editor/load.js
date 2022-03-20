@@ -2,6 +2,9 @@
 setTimeout(function () {
 	console.clear()	
 }, 2000);
+console.clear()
+console.log(`%c Rapid! %c Beta 0.2.3 \n%cWebsite:https://rapideditor.vercel.app/editor/`,"background-color:#3498db;color:white;font-size:20px;","background-color:#00897B;color:white;font-size:20px;","font-size:15px;")
+
 
 var $ = mdui.$;
 
