@@ -280,6 +280,8 @@ window.onbeforeunload = function(event){
     });
 	return '请尽快保存！'; 
 };
-
-
+setTimeout(function () {
 	console.clear()	
+}, 2000);
+
+
