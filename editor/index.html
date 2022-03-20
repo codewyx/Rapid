@@ -1,6 +1,14 @@
-<div class="mdui-ripple">
-  <img class="mdui-img-fluid" data-src="holder.js/100px250"/>
-</div>
+<style>
+    html body {
+         background-color: #93c7d0;
+	    transform:translate(-50%,-50%);
+       }
+	</style>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"></script>
+  <div class="mdui-container mdui-p-t-5">
+    <div class="mdui-spinner mdui-spinner-colorful"></div>
+  </div>
 <script>
 
 function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");var r = window.location.search.substr(1).match(reg);if (r != null) return unescape(r[2]); return null;}
@@ -27,6 +35,7 @@ document.write("		");
 document.write("<style>@media screen and (max-width: 600px) {.file_img{margin-left:20px !important;}}<\/style>");
 document.write("		<link rel=\"shortcut icon\" href=\"icon2.png\">");
 		  document.write("");
+		  
 document.write("  <style>");
 document.write("    html,");
 document.write("    body {");
@@ -310,6 +319,7 @@ document.write("		      ");
 //document.write("<script>window.alert(\"Maintenance update in progress\");<\/script>");
 
 }else{
+	setTimeout(function () {
 	document.write("<!DOCTYPE html>");
 document.write("<html lang=\"zh\">");
 document.write("	<head>");
@@ -614,7 +624,7 @@ document.write("   <!--  <script src=\"https:\/\/cdn.bootcss.com\/Darkmode.js\/1
 document.write("");
 document.write("		      ");
 //document.write("<script>window.alert(\"正在维护更新中\");<\/script>");
-
+}, 4000);
 }
 	console.clear()
 console.log(`%c Rapid! %c Beta 0.2.3 \n%cWebsite:https://rapideditor.vercel.app/editor/`,"background-color:#3498db;color:white;font-size:20px;","background-color:#00897B;color:white;font-size:20px;","font-size:15px;")
