@@ -51,7 +51,7 @@ Blockly.PHP['iframe'] = function(block) {
 
   var text_iframe03 = block.getFieldValue('iframe03');
     // TODO: Assemble PHP into code variable.
-      var code = '<iframe height="'+text_iframe01+'" width="'+text_iframe02+'" style="border: none;" src="'+text_iframe03+'"></iframe>\n';
+      var code = '<iframe height="'+text_iframe03+'" width="'+text_iframe02+'"  src="'+text_iframe01+'"></iframe>\n';
   return code;
 };
 Blockly.PHP['link'] = function(block) {
