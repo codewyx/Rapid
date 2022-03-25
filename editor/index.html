@@ -1,190 +1,206 @@
 
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Rapid-Loading...</title>
-<meta name="google" value="notranslate">
-<div id="web_loading"><div></div></div>
-<script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<style>
-html,
-.bounce {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-	color: #F48FB1;
-  height: 100%;
-  font: normal bold rem "Product Sans", sans-serif;
-  white-space: nowrap;
-}
-.bounce2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-	color: #F48FB1;
-  height: 100%;
-  font: normal bold rem "Product Sans", sans-serif;
-  white-space: nowrap;
-}
-.letter {
-  animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
-  display: inline-block;
-  transform: translate3d(0, 0, 0);
-  margin-top: 0.5em;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
-  font: normal 500 3rem 'Varela Round', sans-serif;
-}
-.letter2 {
-  animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
-  display: inline-block;
-  transform: translate3d(0, 0, 0);
-  margin-top: 0.5em;
-  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
-  font: normal 500 1rem 'Varela Round', sans-serif;
-}
-.letter:nth-child(1) {
-  animation-delay: 0s;
-}
-.letter:nth-child(2) {
-  animation-delay: 0.0833333333s;
-}
-.letter:nth-child(3) {
-  animation-delay: 0.1666666667s;
-}
-.letter:nth-child(4) {
-  animation-delay: 0.25s;
-}
-.letter:nth-child(5) {
-  animation-delay: 0.3333333333s;
-}
-.letter:nth-child(6) {
-  animation-delay: 0.4166666667s;
-}
-.letter:nth-child(7) {
-  animation-delay: 0.4966666667s;
-}
-.letter:nth-child(8) {
-  animation-delay: 0.5666666667s;
-}
-.letter:nth-child(9) {
-  animation-delay: 0.6366666667s;
-}
-.letter:nth-child(10) {
-  animation-delay: 0.7066666667s;
-}
-.letter:nth-child(11) {
-  animation-delay: 0.7766666667s;
-}
-.letter:nth-child(12) {
-  animation-delay: 0.8466666667s;
-}
-.letter:nth-child(13) {
-  animation-delay: 0.9166666667s;
-}
-@keyframes bounce {
-  0% {
-    transform: translate3d(0, 0, 0);
-    text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
-  }
-  100% {
-    transform: translate3d(0, -0.5em, 0);
-    text-shadow: rgba(255, 255, 255, 0.4) 0 1em 0.35em;
-  }
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfpcuPLdshZhVB.woff2) format('woff2');
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqMuPLdshZhVB.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqcuPLdshZhVB.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-@font-face {
-  font-family: 'Varela Round';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Varela Round Regular'), local('VarelaRound-Regular'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfp8uPLdshZg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-<body>
-<div class="bounce">
-	<span class="letter">R</span>
-	<span class="letter">a</span>
-	<span class="letter">p</span>
-	<span class="letter">i</span>
-		<span class="letter">d</span>
-	<span class="letter">&nbsp;</span>
-	<span class="letter">E</span>
-	<span class="letter">d</span>
-	<span class="letter">i</span>
-	<span class="letter">t</span>
-	<span class="letter">o</span>
-	<span class="letter">r</span>
-	<span class="letter"> !</span>
-</div>
-<div class="bounce2">
-	<span class="letter2">春雷响  &nbsp;   &nbsp; &nbsp; 万物生</span>
-
-</div>
-<div class="bounce2">
-	<span class="letter2">The thunder of spring resounds through all living things</span>
-
-</div>
-<script language="javascript">
-  var num = 1;
-  var URL = "";
-  var id = window.setInterval('doUpdate()', 1500);
-  function doUpdate() {
-      if(num == 0) {
-
-      }
-
-      num --;
-  }
-</script>
-
-<script type="text/javascript">// < ![CDATA[
-    jQuery(document).ready(function(){
-        jQuery("#web_loading div").animate({width:"100%"},3000,function(){
-            setTimeout(function(){jQuery("#web_loading div").fadeOut(500);
-            });
-        });
-    });
-</script>
-<style>
-#web_loading{
-z-index:99999;
-width:100%;
-}
-#web_loading div{
-width:0;
-height:2px;
-background:#F48FB1;
-}
-</style>
-</body></html>
 <script>
+function getCookie(cname)
+{
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0; i<ca.length; i++) 
+  {
+    var c = ca[i].trim();
+    if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+  }
+  return "nullone";
+}
+	if(getCookie('load')="nullone"){
 
-
+	}else{
+	document.writeln("");
+document.writeln("<!DOCTYPE html>");
+document.writeln("<html lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">");
+document.writeln("<title>Rapid-Loading...</title>");
+document.writeln("<meta name=\"google\" value=\"notranslate\">");
+document.writeln("<div id=\"web_loading\"><div></div></div>");
+document.writeln("<script src=\"//libs.baidu.com/jquery/2.0.0/jquery.min.js\"></script>");
+document.writeln("<style>");
+document.writeln("html,");
+document.writeln(".bounce {");
+document.writeln("  display: flex;");
+document.writeln("  align-items: center;");
+document.writeln("  justify-content: center;");
+document.writeln("  width: 100%;");
+document.writeln("	color: #F48FB1;");
+document.writeln("  height: 100%;");
+document.writeln("  font: normal bold rem \"Product Sans\", sans-serif;");
+document.writeln("  white-space: nowrap;");
+document.writeln("}");
+document.writeln(".bounce2 {");
+document.writeln("  display: flex;");
+document.writeln("  align-items: center;");
+document.writeln("  justify-content: center;");
+document.writeln("  width: 100%;");
+document.writeln("	color: #F48FB1;");
+document.writeln("  height: 100%;");
+document.writeln("  font: normal bold rem \"Product Sans\", sans-serif;");
+document.writeln("  white-space: nowrap;");
+document.writeln("}");
+document.writeln(".letter {");
+document.writeln("  animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;");
+document.writeln("  display: inline-block;");
+document.writeln("  transform: translate3d(0, 0, 0);");
+document.writeln("  margin-top: 0.5em;");
+document.writeln("  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;");
+document.writeln("  font: normal 500 3rem \'Varela Round\', sans-serif;");
+document.writeln("}");
+document.writeln(".letter2 {");
+document.writeln("  animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;");
+document.writeln("  display: inline-block;");
+document.writeln("  transform: translate3d(0, 0, 0);");
+document.writeln("  margin-top: 0.5em;");
+document.writeln("  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;");
+document.writeln("  font: normal 500 1rem \'Varela Round\', sans-serif;");
+document.writeln("}");
+document.writeln(".letter:nth-child(1) {");
+document.writeln("  animation-delay: 0s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(2) {");
+document.writeln("  animation-delay: 0.0833333333s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(3) {");
+document.writeln("  animation-delay: 0.1666666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(4) {");
+document.writeln("  animation-delay: 0.25s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(5) {");
+document.writeln("  animation-delay: 0.3333333333s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(6) {");
+document.writeln("  animation-delay: 0.4166666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(7) {");
+document.writeln("  animation-delay: 0.4966666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(8) {");
+document.writeln("  animation-delay: 0.5666666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(9) {");
+document.writeln("  animation-delay: 0.6366666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(10) {");
+document.writeln("  animation-delay: 0.7066666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(11) {");
+document.writeln("  animation-delay: 0.7766666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(12) {");
+document.writeln("  animation-delay: 0.8466666667s;");
+document.writeln("}");
+document.writeln(".letter:nth-child(13) {");
+document.writeln("  animation-delay: 0.9166666667s;");
+document.writeln("}");
+document.writeln("@keyframes bounce {");
+document.writeln("  0% {");
+document.writeln("    transform: translate3d(0, 0, 0);");
+document.writeln("    text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;");
+document.writeln("  }");
+document.writeln("  100% {");
+document.writeln("    transform: translate3d(0, -0.5em, 0);");
+document.writeln("    text-shadow: rgba(255, 255, 255, 0.4) 0 1em 0.35em;");
+document.writeln("  }");
+document.writeln("}");
+document.writeln("@font-face {");
+document.writeln("  font-family: \'Varela Round\';");
+document.writeln("  font-style: normal;");
+document.writeln("  font-weight: 400;");
+document.writeln("  font-display: swap;");
+document.writeln("  src: local(\'Varela Round Regular\'), local(\'VarelaRound-Regular\'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfpcuPLdshZhVB.woff2) format(\'woff2\');");
+document.writeln("  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;");
+document.writeln("}");
+document.writeln("@font-face {");
+document.writeln("  font-family: \'Varela Round\';");
+document.writeln("  font-style: normal;");
+document.writeln("  font-weight: 400;");
+document.writeln("  font-display: swap;");
+document.writeln("  src: local(\'Varela Round Regular\'), local(\'VarelaRound-Regular\'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqMuPLdshZhVB.woff2) format(\'woff2\');");
+document.writeln("  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;");
+document.writeln("}");
+document.writeln("@font-face {");
+document.writeln("  font-family: \'Varela Round\';");
+document.writeln("  font-style: normal;");
+document.writeln("  font-weight: 400;");
+document.writeln("  font-display: swap;");
+document.writeln("  src: local(\'Varela Round Regular\'), local(\'VarelaRound-Regular\'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfqcuPLdshZhVB.woff2) format(\'woff2\');");
+document.writeln("  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;");
+document.writeln("}");
+document.writeln("@font-face {");
+document.writeln("  font-family: \'Varela Round\';");
+document.writeln("  font-style: normal;");
+document.writeln("  font-weight: 400;");
+document.writeln("  font-display: swap;");
+document.writeln("  src: local(\'Varela Round Regular\'), local(\'VarelaRound-Regular\'), url(https://fonts.gstatic.com/s/varelaround/v12/w8gdH283Tvk__Lua32TysjIfp8uPLdshZg.woff2) format(\'woff2\');");
+document.writeln("  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;");
+document.writeln("}");
+document.writeln("</style>");
+document.writeln("<body>");
+document.writeln("<div class=\"bounce\">");
+document.writeln("	<span class=\"letter\">R</span>");
+document.writeln("	<span class=\"letter\">a</span>");
+document.writeln("	<span class=\"letter\">p</span>");
+document.writeln("	<span class=\"letter\">i</span>");
+document.writeln("		<span class=\"letter\">d</span>");
+document.writeln("	<span class=\"letter\">&nbsp;</span>");
+document.writeln("	<span class=\"letter\">E</span>");
+document.writeln("	<span class=\"letter\">d</span>");
+document.writeln("	<span class=\"letter\">i</span>");
+document.writeln("	<span class=\"letter\">t</span>");
+document.writeln("	<span class=\"letter\">o</span>");
+document.writeln("	<span class=\"letter\">r</span>");
+document.writeln("	<span class=\"letter\"> !</span>");
+document.writeln("</div>");
+document.writeln("<div class=\"bounce2\">");
+document.writeln("	<span class=\"letter2\">春雷响  &nbsp;   &nbsp; &nbsp; 万物生</span>");
+document.writeln("");
+document.writeln("</div>");
+document.writeln("<div class=\"bounce2\">");
+document.writeln("	<span class=\"letter2\">The thunder of spring resounds through all living things</span>");
+document.writeln("");
+document.writeln("</div>");
+document.writeln("<script language=\"javascript\">");
+document.writeln("  var num = 1;");
+document.writeln("  var URL = \"\";");
+document.writeln("  var id = window.setInterval(\'doUpdate()\', 1500);");
+document.writeln("  function doUpdate() {");
+document.writeln("      if(num == 0) {");
+document.writeln("");
+document.writeln("      }");
+document.writeln("");
+document.writeln("      num --;");
+document.writeln("  }");
+document.writeln("</script>");
+document.writeln("");
+document.writeln("<script type=\"text/javascript\">// < ![CDATA[");
+document.writeln("    jQuery(document).ready(function(){");
+document.writeln("        jQuery(\"#web_loading div\").animate({width:\"100%\"},3000,function(){");
+document.writeln("            setTimeout(function(){jQuery(\"#web_loading div\").fadeOut(500);");
+document.writeln("            });");
+document.writeln("        });");
+document.writeln("    });");
+document.writeln("</script>");
+document.writeln("<style>");
+document.writeln("#web_loading{");
+document.writeln("z-index:99999;");
+document.writeln("width:100%;");
+document.writeln("}");
+document.writeln("#web_loading div{");
+document.writeln("width:0;");
+document.writeln("height:2px;");
+document.writeln("background:#F48FB1;");
+document.writeln("}");
+document.writeln("</style>");
+document.writeln("</body></html>");
+document.cookie="load=isnot";
+	}
+	
 function getQueryString(name) {var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");var r = window.location.search.substr(1).match(reg);if (r != null) return unescape(r[2]); return null;}
           if(getQueryString("lan")=="en"){
 	setTimeout(function () {
