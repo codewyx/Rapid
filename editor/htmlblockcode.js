@@ -156,8 +156,10 @@ if(dropdown_drawcc=="1"){
                                   var code = '<sup>\n'+statements_head101+'\n</sup>\n';
                             }else if(dropdown_drawcc=="9"){
                                       var code = '<ins>\n'+statements_head101+'\n</ins>\n';
+                            }else if(dropdown_drawcc=="10"){
+                                      var code = '<ins>\n'+statements_head101+'\n</ins>\n';
                             }else{
-                                      var code = '<del>\n'+statements_head101+'\n</del>\n';
+                                      var code = '<q>\n'+statements_head101+'\n</q>\n';
                             }
 
   return code;
