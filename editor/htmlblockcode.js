@@ -167,7 +167,7 @@ if(dropdown_drawcc=="1"){
   return code;
 };
 
-Blockly.PHP['textx'] = function(block) {
+Blockly.PHP['textx1'] = function(block) {
   var statements_head101 = Blockly.PHP.statementToCode(block, 'textx1k002');
       var dropdown_drawcc = block.getFieldValue('textx1k001');
       var text_div011 = block.getFieldValue('textx1k003');
