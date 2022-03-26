@@ -37,6 +37,7 @@ if(getQueryString("lan")=="en"){
         blan['iframe1'] = "link";
         blan['iframe2'] = "wdth";
         blan['iframe3'] = "heigh";
+          blan['textx01'] = "Insert text formatting label";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -81,6 +82,7 @@ if(getQueryString("lan")=="en"){
      //   blan['iframe1'] = "链接";
     //    blan['iframe2'] = "宽";
      //   blan['iframe3'] = "高";
+            blan['textx01'] = "插入文本格式化标签";
   
 };
 Blockly.Blocks['title'] = {
@@ -332,6 +334,20 @@ Blockly.Blocks['1link'] = {
           this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
   }
+};
+Blockly.Blocks['textx'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(blan['textx01']);
+        .appendField(new Blockly.FieldDropdown([["定义粗体文本","1"], ["定义大号字","2"], ["定义着重文字","3"],["定义斜体字","4"],["定义小号字","5"],["定义加重语气","6"],["定义下标字","7"],["定义上标字","8"],["定义插入字","9"],["定义删除字","10"]]), "textxk001");
+        this.appendStatementInput("textxk002")
+            .setCheck(null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(230);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
 };
 //Blockly.Blocks['iframe'] = {
  //   init: function () {
