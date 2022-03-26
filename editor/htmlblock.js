@@ -367,7 +367,7 @@ Blockly.Blocks['textx'] = {
             .setCheck(null);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour(230);
+        this.setColour(0);
         this.setTooltip("");
         this.setHelpUrl("");
     }
