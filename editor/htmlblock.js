@@ -37,6 +37,8 @@ if(getQueryString("lan")=="en"){
         blan['iframe1'] = "link";
         blan['iframe2'] = "wdth";
         blan['iframe3'] = "heigh";
+          blan['textx01'] = "Insert text formatting label";
+           blan['text1x01'] = "Insert resource class label";
 }else{
   var blan = new Array();
   blan['title001'] = "定义标题";
@@ -81,6 +83,8 @@ if(getQueryString("lan")=="en"){
      //   blan['iframe1'] = "链接";
     //    blan['iframe2'] = "宽";
      //   blan['iframe3'] = "高";
+            blan['textx01'] = "插入文本格式化标签";
+              blan['text1x01'] = "插入资源类标签";
   
 };
 Blockly.Blocks['title'] = {
@@ -333,6 +337,7 @@ Blockly.Blocks['1link'] = {
         this.setNextStatement(true, null);
   }
 };
+
 //Blockly.Blocks['iframe'] = {
  //   init: function () {
    //     this.appendDummyInput()
@@ -355,3 +360,33 @@ Blockly.Blocks['1link'] = {
      //   this.setHelpUrl("");
    // }
 //};
+Blockly.Blocks['textx'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(blan['textx01'])
+            .appendField(new Blockly.FieldDropdown([["定义粗体文本","1"], ["定义大号字","2"], ["定义着重文字","3"],["定义斜体字","4"],["定义小号字","5"],["定义加重语气","6"],["定义下标字","7"],["定义上标字","8"],["定义插入字","9"],["定义删除字","10"],["定义文本短引用","11"],["定义文本长引用","12"]]), "textxk001");
+        this.appendStatementInput("textxk002")
+            .setCheck(null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(0);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
+Blockly.Blocks['textx1'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(blan['textx101'])
+            .appendField(new Blockly.FieldDropdown([["链接","1"], ["图像","2"], ["多媒体","3"]]), "textx1k001")
+                  .appendField(blan['iframe005'])
+             .appendField(new Blockly.FieldTextInput("https://rapideditor.vercel.app/"), "textx1k003");
+        this.appendStatementInput("textx1k002")
+            .setCheck(null);
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(0);
+        this.setTooltip("");
+        this.setHelpUrl("");
+    }
+};
