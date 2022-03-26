@@ -134,3 +134,30 @@ Blockly.PHP['1link'] = function(block) {
   //var code = '<iframe src="' + block.getFieldValue('iframe1') + ' width='+block.getFieldValue('iframe2') +  ' height='+block.getFieldValue('iframe2') +'"></iframe>\n';
   //return code;
 //};
+Blockly.PHP['textx'] = function(block) {
+  var statements_head101 = Blockly.PHP.statementToCode(block, 'textxk002');
+      var dropdown_drawcc = block.getFieldValue('textxk001');
+if(dropdown_drawcc=="1"){
+      var code = '<b>\n'+statements_head101+'\n</b>\n';
+}else if(dropdown_drawcc=="2"){
+          var code = '<big>\n'+statements_head101+'\n</big>\n';
+    }else if(dropdown_drawcc=="3"){
+              var code = '<em>\n'+statements_head101+'\n</em>\n';
+        }else if(dropdown_drawcc=="4"){
+                  var code = '<i>\n'+statements_head101+'\n</i>\n';
+            }else if(dropdown_drawcc=="5"){
+                      var code = '<small>\n'+statements_head101+'\n</small>\n';
+                }else if(dropdown_drawcc=="6"){
+                          var code = '<strong>\n'+statements_head101+'\n</strong>\n';
+                    }else if(dropdown_drawcc=="7"){
+                              var code = '<sub>\n'+statements_head101+'\n</sub>\n';
+                        }else if(dropdown_drawcc=="8"){
+                                  var code = '<sup>\n'+statements_head101+'\n</sup>\n';
+                            }else if(dropdown_drawcc=="9"){
+                                      var code = '<ins>\n'+statements_head101+'\n</ins>\n';
+                            }else{
+                                      var code = '<del>\n'+statements_head101+'\n</del>\n';
+                            }
+
+  return code;
+};
