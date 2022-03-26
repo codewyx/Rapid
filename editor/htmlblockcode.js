@@ -167,4 +167,17 @@ if(dropdown_drawcc=="1"){
   return code;
 };
 
+Blockly.PHP['textx'] = function(block) {
+  var statements_head101 = Blockly.PHP.statementToCode(block, 'textx1k002');
+      var dropdown_drawcc = block.getFieldValue('textx1k001');
+      var text_div011 = block.getFieldValue('textx1k003');
+if(dropdown_drawcc=="1"){
+      var code = '<a href="'+text_div011+'">\n'+statements_head101+'\n</a>\n';
+}else if(dropdown_drawcc=="2"){
+          var code = '<img src="'+text_div011+'"/>\n'+statements_head101+'\n';
+    }else{
+                                              var code = '<embed src="'+text_div011+'"/>\n'+statements_head101+'\n';
+                            }
 
+  return code;
+};
