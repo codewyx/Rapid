@@ -157,9 +157,11 @@ if(dropdown_drawcc=="1"){
                             }else if(dropdown_drawcc=="9"){
                                       var code = '<ins>\n'+statements_head101+'\n</ins>\n';
                             }else if(dropdown_drawcc=="10"){
-                                      var code = '<ins>\n'+statements_head101+'\n</ins>\n';
-                            }else{
+                                      var code = '<del>\n'+statements_head101+'\n</del>\n';
+                            }else if(dropdown_drawcc=="11"){
                                       var code = '<q>\n'+statements_head101+'\n</q>\n';
+                            }else{
+                                      var code = '<blockquote>\n'+statements_head101+'\n</blockquote>\n';
                             }
 
   return code;
