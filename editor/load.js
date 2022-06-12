@@ -14,7 +14,47 @@ $('#open').on('click', function () {
   inst.open();
 });
 
-'use strict';
+class MyCategory extends Blockly.ToolboxCategory {
+  /**
+   * @override
+   */
+  constructor(categoryDef, toolbox, opt_parent) {
+    super(categoryDef, toolbox, opt_parent);
+  }
+
+  /** @override */
+  addColourBorder_(colour){
+      console.log("add_color::name= " + this.toolboxItemDef_.name + " color= " + colour);
+      this.rowDiv_.style.backgroundColor = colour;
+  }
+
+  /** @override */
+  setSelected(isSelected){
+     var labelDom = this.rowDiv_.getElementsByClassName('blocklyTreeLabel')[0];
+     if (isSelected) {//选中状态
+       // 把DIV背景设置为白色
+       this.rowDiv_.style.backgroundColor = 'white';
+       labelDom.style.color = this.colour_;
+       this.iconDom_.style.color = this.colour_;//图标选中效果颜色
+     } else {
+       this.rowDiv_.style.backgroundColor = this.colour_;
+       // 设置文本颜色为白色
+       labelDom.style.color = 'white';
+       this.iconDom_.style.color = 'white';//图标非选中效果颜色
+     }
+  }
+
+  /** @override */
+  createIconDom_() {
+    const img = document.createElement('img');
+    img.src = './img/icon_bus_mr.png';
+    img.alt = 'Lamp';
+    img.width='15';
+    img.height='15';
+    return img;
+  }
+
+}
 
 function start() {}
 
