@@ -48,20 +48,21 @@ function saveHtml() {
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
   //让varcode等于上面定义的东西
-  function saveShareContent(content, fileName) {
-    let downLink = document.createElement("a");
-    downLink.download = fileName;
-    //字符内容转换为blod地址
-    let blob = new Blob([content]);
-    downLink.href = URL.createObjectURL(blob);
-    // 链接插入到页面
-    document.body.appendChild(downLink);
-    downLink.click();
-    // 移除下载链接
-    document.body.removeChild(downLink);
-  }
+function saveShareContent(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+ 
+  element.style.display = 'none';
+  document.body.appendChild(element);
+ 
+  element.click();
+ 
+  document.body.removeChild(element);
+}
+
   const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
-  saveShareContent(code, "myhtml.html");
+  saveShareContent("myhtml.html",code);
   mdui.snackbar({
     message: "Rapid ：Html文件成功下载",
     position: "right-top"
@@ -197,23 +198,24 @@ Blockly.getMainWorkspace().clear();
     }  
 }
 function dosaveblockly() {
-  function saveShareContent(content, fileName) {
-    let downLink = document.createElement("a");
-    downLink.download = fileName;
-    //字符内容转换为blod地址
-    let blob = new Blob([content]);
-    downLink.href = URL.createObjectURL(blob);
-    // 链接插入到页面
-    document.body.appendChild(downLink);
-    downLink.click();
-    // 移除下载链接
-    document.body.removeChild(downLink);
-  }
+ function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+ 
+  element.style.display = 'none';
+  document.body.appendChild(element);
+ 
+  element.click();
+ 
+  document.body.removeChild(element);
+}
+
   const xml = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
   var str = Blockly.Xml.domToText(xml);  
 var base = new Base64();  
 var result = base.encode(str);  
-  saveShareContent(result, "myxml.rapid");
+  saveShareContent( "myxml.rapid",result);
   mdui.snackbar({
     message: "Rapid ：下载成功",
     position: "right-top"
