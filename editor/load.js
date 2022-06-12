@@ -52,7 +52,7 @@ class MyCategory extends Blockly.ToolboxCategory {
   /** @override */
   createIconDom_() {
     const img = document.createElement('img');
-    img.src = 'https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg';
+    img.src = '';
     img.alt = 'Lamp';
     img.width='15';
     img.height='15';
