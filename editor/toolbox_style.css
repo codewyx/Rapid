@@ -1,4 +1,7 @@
 /* Makes our label white. */
+.yangshi1 {
+  background-image:url("https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg");
+}
 .blocklyTreeLabel {
   color: black;
 }
