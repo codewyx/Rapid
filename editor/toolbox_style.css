@@ -27,6 +27,6 @@
   height: initial;
 }
  .blocklyTreeIcon{
-background:url("https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg");
+background:url(https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg);
     content: "\A";  
 }
