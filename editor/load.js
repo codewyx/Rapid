@@ -215,7 +215,7 @@ function dosaveblockly() {
   var str = Blockly.Xml.domToText(xml);  
 var base = new Base64();  
 var result = base.encode(str);  
-  saveShareContent( "myxml.rapid",result);
+  download( "myxml.rapid",result);
   mdui.snackbar({
     message: "Rapid ：下载成功",
     position: "right-top"
