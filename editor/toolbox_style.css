@@ -29,4 +29,5 @@
  .blocklyTreeIcon{
 background:url(set.png);
     content: "\A";  
+   background-size: 17px 17px;
 }
