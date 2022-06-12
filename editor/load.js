@@ -14,6 +14,11 @@ $('#open').on('click', function () {
   inst.open();
 });
 
+
+
+function start() {}
+
+var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
 class MyCategory extends Blockly.ToolboxCategory {
   /**
    * @override
@@ -55,11 +60,6 @@ class MyCategory extends Blockly.ToolboxCategory {
   }
 
 }
-
-function start() {}
-
-var demoWorkspace = Blockly.inject('blocklyDiv', {toolbox: document.getElementById('toolbox'),grid: {spacing: 40,length: 3,colour: '#ccc',snap: true},});Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
-
 		function showHtml() {
   Blockly.PHP.INFINITE_LOOP_TRAP = true;
   var code = Blockly.PHP.workspaceToCode(demoWorkspace);
