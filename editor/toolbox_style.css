@@ -1,10 +1,5 @@
 /* Makes our label white. */
-.yangshi1 {
-  background-image:url("https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg");
-}
-.blocklyTreeLabel {
-  color: black;
-}
+
 /* Adds padding around the group of categories and separators. */
 .blocklyToolboxContents {
   padding: .5em;
@@ -31,8 +26,7 @@
 .blocklyTreeRow {
   height: initial;
 }
-/* .blocklyTreeIcon{
-background:url(logo_only.svg);
+ .blocklyTreeIcon{
+background:url("https://waddle-beta.coco-central.cn/static/img/logo/logo-purple.svg");
     content: "\A";  
 }
- */
