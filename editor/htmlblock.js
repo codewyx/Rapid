@@ -390,3 +390,14 @@ Blockly.Blocks['textx1'] = {
         this.setHelpUrl("");
     }
 };
+Blockly.Blocks['button'] = {
+  init: function() {
+    this.appendValueInput("button01")
+        .setCheck(null)
+        .appendField("按钮");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(0);
+ this.setHelpUrl("");
+  }
+};
