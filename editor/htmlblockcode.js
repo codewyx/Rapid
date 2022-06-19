@@ -181,3 +181,9 @@ if(dropdown_drawcc=="1"){
 
   return code;
 };
+Blockly.PHP['button'] = function(block) {
+    var value_button = Blockly.PHP.statementToCode(block, 'button01')
+  // TODO: Assemble PHP into code variable.
+  var code = '<button>'+value_button+'</button>\n';
+  return code;
+};
