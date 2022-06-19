@@ -12,9 +12,5 @@
 #### 程序架构
 Html+Js
 <a name="AL2Yy"></a>
-#### 文档
-
-1. 进入语雀知识库[[https://www.yuque.com/codewyx/rapid](https://www.yuque.com/codewyx/rapid)]
-<a name="Jmh9I"></a>
 #### 名称与配色
 Rapid为迅速，快速，象征Rapid编写的方便性。<br />**配色 #00897B**
